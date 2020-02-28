@@ -22,8 +22,8 @@ raw_string_catalog=raw_string_catalog.replace("null","None")
 
 
 #dicionary of course and catalog
-# string_list_course = ast.literal_eval(raw_string_course)
-# string_list_catalog = eval(raw_string_catalog)
+string_list_course = ast.literal_eval(raw_string_course)
+string_list_catalog = eval(raw_string_catalog)
 
 final_dictionary={}
 for i in copy.deepcopy(string_list_catalog):
@@ -45,22 +45,6 @@ print(len(string_list_course),len(string_list_catalog))
 # course_set=set([i["ID"] for i in string_list_course])
 # catalog_set=set([i["ID"] for i in string_list_catalog])
 # difference = course_set-catalog_set
-
-writetofile()
-
-with open("difference.txt","w") as file:
-for i in difference:
-	file.write(i)
-	file.write("\n")
-
-# course_set=set([i["ID"] for i in string_list_course])
-# catalog_set=set([i["ID"] for i in string_list_catalog])
-# print(len(course_set),len(catalog_set))
-
-content=[]
-list_thread=[]
-list_response=[]
-
 def writetofile():
 	with open("course.txt","w") as file:
 		for i in string_list_course:
@@ -84,6 +68,23 @@ def writetofile():
 			item['prerequisites'] = item['prerequisites'].replace("\\/"," ").replace("\n"," ")
 			file.write(json.dumps({key:item}))
 			file.write("\n")
+
+writetofile()
+
+# with open("difference.txt","w") as file:
+# for i in difference:
+# 	file.write(i)
+# 	file.write("\n")
+
+# course_set=set([i["ID"] for i in string_list_course])
+# catalog_set=set([i["ID"] for i in string_list_catalog])
+# print(len(course_set),len(catalog_set))
+
+content=[]
+list_thread=[]
+list_response=[]
+
+
 
 #dead end, try to see why course set has more ID than catalog set.
 def multiple_requests():
