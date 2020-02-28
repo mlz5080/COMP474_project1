@@ -59,6 +59,8 @@ with open("difference.txt","w") as file:
 content=[]
 list_thread=[]
 list_response=[]
+
+#dead end, try to see why course set has more ID than catalog set.
 def multiple_requests():
 	with FuturesSession(max_workers=8,session=requests.Session()) as rq_session:
 		for cid in course_set-catalog_set:
