@@ -2,6 +2,7 @@ import requests,ast
 from requests_futures.sessions import FuturesSession
 from concurrent.futures import as_completed
 import json
+import copy
 
 User="124"
 Key="d3c1c8924a8d59f9b5f29f54bbbbb5e7"
@@ -19,9 +20,23 @@ raw_string_catalog=raw_string_catalog.replace("null","None")
 #print(raw_string_catalog)
 
 
-#dicionaries
+#dicionary of course and catalog
 string_list_course = ast.literal_eval(raw_string_course)
 string_list_catalog = eval(raw_string_catalog)
+
+final_dictionary={}
+for i in copy.deepcopy(string_list_catalog):
+	myid = i.pop('ID')
+	final_dictionary[myid] = i
+
+
+for i in copy.deepcopy(string_list_course):
+	key = i['ID']
+	if key in final_dictionary:
+		final_dictionary[key]['description'] = i['description']
+
+print(final_dictionary)
+
 # print(string_list_catalog)
 # print(string_list_course)
 print(len(string_list_course),len(string_list_catalog))
@@ -41,9 +56,18 @@ def writetofile():
 			file.write(json.dumps(i))
 			file.write("\n")
 
-course_set=set([i["ID"] for i in string_list_course])
-catalog_set=set([i["ID"] for i in string_list_catalog])
-difference = course_set-catalog_set
+	with open("final_copy.txt","w") as file:
+		for key,item in final_dictionary.items():
+			item['description']=item['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","")
+			item['description']=item['description'].replace("\\/","").replace("\r"," ").replace("\t"," ").replace("*VID*","").replace("*CNT*","")
+			item['title'] = item['title'].replace("\\/"," ").replace("\t"," ")
+			item['prerequisites'] = item['prerequisites'].replace("\\/"," ").replace("\n"," ")
+			file.write(json.dumps({key:item}))
+			file.write("\n")
+
+# course_set=set([i["ID"] for i in string_list_course])
+# catalog_set=set([i["ID"] for i in string_list_catalog])
+# difference = course_set-catalog_set
 
 writetofile()
 
