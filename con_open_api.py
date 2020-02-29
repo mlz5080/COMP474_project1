@@ -3,6 +3,8 @@ from requests_futures.sessions import FuturesSession
 from concurrent.futures import as_completed
 import json
 import copy
+from bs4 import BeautifulSoup
+import re
 
 User="124"
 Key="d3c1c8924a8d59f9b5f29f54bbbbb5e7"
@@ -19,7 +21,7 @@ def api_call():
 	raw_string_catalog=requests.get(base_url+"course/catalog/filter/*/*/*",auth=(User,Key)).content.decode()
 	
 	raw_string_catalog=raw_string_catalog.replace("null","None")
-	raw_string_course=raw_string_course.replace("crosslisted\": null","crosslisted\": \"null\"")
+	#raw_string_course=raw_string_course.replace("crosslisted\": null","crosslisted\": \"null\"")
 	#print(raw_string_catalog)
 
 
@@ -47,22 +49,24 @@ def api_call():
 	# course_set=set([i["ID"] for i in string_list_course])
 	# catalog_set=set([i["ID"] for i in string_list_catalog])
 	# difference = course_set-catalog_set
-	with open("course.txt","w") as file:
-		for i in string_list_course:
-			i['description']=i['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","")
-			i['description']=i['description'].replace("\\/","").replace("\r"," ").replace("\t"," ").replace("*VID*","").replace("*CNT*","")
-			file.write(json.dumps(i))
-			file.write("\n")
+	# with open("course.txt","w") as file:
+	# 	for i in string_list_course:
+	# 		i['description']=i['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","")
+	# 		i['description']=i['description'].replace("\\/","").replace("\r"," ").replace("\t"," ").replace("*VID*","").replace("*CNT*","")
+	# 		file.write(json.dumps(i))
+	# 		file.write("\n")
 
-	with open("catalog.txt","w") as file:
-		for i in string_list_catalog:
-			i['title'] = i['title'].replace("\\/"," ").replace("\t"," ")
-			i['prerequisites'] = i['prerequisites'].replace("\\/"," ").replace("\n"," ")
-			file.write(json.dumps(i))
-			file.write("\n")
+	# with open("catalog.txt","w") as file:
+	# 	for i in string_list_catalog:
+	# 		i['title'] = i['title'].replace("\\/"," ").replace("\t"," ")
+	# 		i['prerequisites'] = i['prerequisites'].replace("\\/"," ").replace("\n"," ")
+	# 		file.write(json.dumps(i))
+	# 		file.write("\n")
 
 	with open("final_copy.txt","w") as file:
 		for key,item in final_dictionary.items():
+			if "crosslisted" in item and item['crosslisted']==None:
+				item['crosslisted']= "null"
 			item['description']=item['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","").replace("\"","")
 			item['description']=item['description'].replace("\\/","").replace("\r"," ").replace("\t"," ").replace("*VID*","").replace("*CNT*","").replace("NOTE:","NOTE ")
 			item['title'] = item['title'].replace("\\/"," ").replace("\t"," ")
@@ -70,7 +74,7 @@ def api_call():
 			file.write(json.dumps({key:item}))
 			file.write("\n")
 
-#api_call()
+api_call()
 
 
 
@@ -83,29 +87,32 @@ def api_call():
 
 #dead end, try to see why course set has more ID than catalog set.
 def multiple_requests():
+	mylist = []
+	url = "http://www.concordia.ca/academics/undergraduate/calendar/current/sec61/61-40.html"
+	with open("final_copy.txt","r") as file:
+		for line in file:
+			#print(line)
+			mylist.append(json.loads(line.replace("\n","")))
+
+	courselist = []
+	for data in mylist:
+		for key,val in data.items():
+			if( "Calendar" in val['description']):
+				courselist.append(val['subject']+" "+val['catalog'])
+
 	with FuturesSession(max_workers=8,session=requests.Session()) as rq_session:
-		for cid in course_set-catalog_set:
-			list_thread.append(rq_session.get(base_url+"course/description/filter/"+cid,auth=(User,Key)))
+		resposne = rq_session.get(url).result().content
+		#print(resposne)
+		soup = BeautifulSoup(resposne,"lxml")
+		parent_para = soup.find("a",id="courses").parent.parent
 
-		for index,job in enumerate(as_completed(list_thread)):
-			list_response.append(job.result())
+		for i in courselist:
+			parent_para.find("b",re=i)
 
-		for response in list_response:
-			print(response.content.decode())
-
-mylist = []
-
-with open("final_copy.txt","r") as file:
-	for line in file:
-		#print(line)
-		mylist.append(json.loads(line.replace("\n","")))
-
-courselist = []
-for data in mylist:
-	for key,val in data.items():
-		if( "Calendar" in val['description']):
-			courselist.append(val['subject']+val['catalog'])
-print(courselist)
+multiple_requests()
+		
 
 
-url = "http://www.concordia.ca/academics/undergraduate/calendar/current/sec61/61-50.html"
+
+
+
