@@ -7,44 +7,45 @@ import copy
 User="124"
 Key="d3c1c8924a8d59f9b5f29f54bbbbb5e7"
 
-#API format
-#Any parameter could be replaced by *
-#Course
-#GET course/description/filter/{courseID}
-#Catalog
-#GET course/catalog/filter/{subject}/{catalog}/{carreer}
-
-base_url="https://opendata.concordia.ca/API/v1/"
-raw_string_course=requests.get(base_url+"course/description/filter/*",auth=(User,Key)).content.decode()
-raw_string_catalog=requests.get(base_url+"course/catalog/filter/*/*/*",auth=(User,Key)).content.decode()
-raw_string_catalog=raw_string_catalog.replace("null","None")
-#print(raw_string_catalog)
-
-
-#dicionary of course and catalog
-string_list_course = ast.literal_eval(raw_string_course)
-string_list_catalog = eval(raw_string_catalog)
-
-final_dictionary={}
-for i in copy.deepcopy(string_list_catalog):
-	myid = i.pop('ID')
-	final_dictionary[myid] = i
+	#API format
+	#Any parameter could be replaced by *
+	#Course
+	#GET course/description/filter/{courseID}
+	#Catalog
+	#GET course/catalog/filter/{subject}/{catalog}/{carreer}
+def api_call():
+	base_url="https://opendata.concordia.ca/API/v1/"
+	raw_string_course=requests.get(base_url+"course/description/filter/*",auth=(User,Key)).content.decode()
+	raw_string_catalog=requests.get(base_url+"course/catalog/filter/*/*/*",auth=(User,Key)).content.decode()
+	raw_string_catalog=raw_string_catalog.replace("null","None")
+	raw_string_course=raw_string_course.replace("crosslisted\": null","crosslisted\": \"null\"")
+	#print(raw_string_catalog)
 
 
-for i in copy.deepcopy(string_list_course):
-	key = i['ID']
-	if key in final_dictionary:
-		final_dictionary[key]['description'] = i['description']
+	#dicionary of course and catalog
+	string_list_course = ast.literal_eval(raw_string_course)
+	string_list_catalog = eval(raw_string_catalog)
 
-print(final_dictionary)
+	final_dictionary={}
+	for i in copy.deepcopy(string_list_catalog):
+		myid = i.pop('ID')
+		final_dictionary[myid] = i
 
-# print(string_list_catalog)
-# print(string_list_course)
-print(len(string_list_course),len(string_list_catalog))
 
-# course_set=set([i["ID"] for i in string_list_course])
-# catalog_set=set([i["ID"] for i in string_list_catalog])
-# difference = course_set-catalog_set
+	for i in copy.deepcopy(string_list_course):
+		key = i['ID']
+		if key in final_dictionary:
+			final_dictionary[key]['description'] = i['description']
+
+	print(final_dictionary)
+
+	# print(string_list_catalog)
+	# print(string_list_course)
+	print(len(string_list_course),len(string_list_catalog))
+
+	# course_set=set([i["ID"] for i in string_list_course])
+	# catalog_set=set([i["ID"] for i in string_list_catalog])
+	# difference = course_set-catalog_set
 def writetofile():
 	with open("course.txt","w") as file:
 		for i in string_list_course:
@@ -62,29 +63,19 @@ def writetofile():
 
 	with open("final_copy.txt","w") as file:
 		for key,item in final_dictionary.items():
-			item['description']=item['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","")
+			item['description']=item['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","").replace("\"","")
 			item['description']=item['description'].replace("\\/","").replace("\r"," ").replace("\t"," ").replace("*VID*","").replace("*CNT*","").replace("NOTE:","NOTE ")
 			item['title'] = item['title'].replace("\\/"," ").replace("\t"," ")
 			item['prerequisites'] = item['prerequisites'].replace("\\/"," ").replace("\n"," ")
 			file.write(json.dumps({key:item}))
 			file.write("\n")
 
-writetofile()
-
-# with open("difference.txt","w") as file:
-# for i in difference:
-# 	file.write(i)
-# 	file.write("\n")
-
-# course_set=set([i["ID"] for i in string_list_course])
-# catalog_set=set([i["ID"] for i in string_list_catalog])
-# print(len(course_set),len(catalog_set))
-
-content=[]
-list_thread=[]
-list_response=[]
+#writetofile()
 
 
+# content=[]
+# list_thread=[]
+# list_response=[]
 
 #dead end, try to see why course set has more ID than catalog set.
 def multiple_requests():
@@ -97,3 +88,20 @@ def multiple_requests():
 
 		for response in list_response:
 			print(response.content.decode())
+
+mylist = []
+
+with open("final_copy.txt","r") as file:
+	for line in file:
+		#print(line)
+		mylist.append(json.loads(line.replace("\n","")))
+
+courselist = []
+for data in mylist:
+	for key,val in data.items():
+		if( "Calendar" in val['description']):
+			courselist.append(val['subject']+val['catalog'])
+print(courselist)
+
+
+url = "http://www.concordia.ca/academics/undergraduate/calendar/current/sec61/61-50.html"
