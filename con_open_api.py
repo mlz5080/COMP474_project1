@@ -17,6 +17,7 @@ def api_call():
 	base_url="https://opendata.concordia.ca/API/v1/"
 	raw_string_course=requests.get(base_url+"course/description/filter/*",auth=(User,Key)).content.decode()
 	raw_string_catalog=requests.get(base_url+"course/catalog/filter/*/*/*",auth=(User,Key)).content.decode()
+	
 	raw_string_catalog=raw_string_catalog.replace("null","None")
 	raw_string_course=raw_string_course.replace("crosslisted\": null","crosslisted\": \"null\"")
 	#print(raw_string_catalog)
@@ -46,7 +47,6 @@ def api_call():
 	# course_set=set([i["ID"] for i in string_list_course])
 	# catalog_set=set([i["ID"] for i in string_list_catalog])
 	# difference = course_set-catalog_set
-def writetofile():
 	with open("course.txt","w") as file:
 		for i in string_list_course:
 			i['description']=i['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","")
@@ -69,6 +69,10 @@ def writetofile():
 			item['prerequisites'] = item['prerequisites'].replace("\\/"," ").replace("\n"," ")
 			file.write(json.dumps({key:item}))
 			file.write("\n")
+
+#api_call()
+
+
 
 #writetofile()
 
