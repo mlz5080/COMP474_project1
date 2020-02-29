@@ -62,7 +62,7 @@ def writetofile():
 
 	with open("final_copy.txt","w") as file:
 		for key,item in final_dictionary.items():
-			item['description']=item['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","")
+			item['description']=item['description'].replace("\n"," ").replace("***","").replace("~~~","").replace("*KEYB*","").replace("<b>","").replace("\"","")
 			item['description']=item['description'].replace("\\/","").replace("\r"," ").replace("\t"," ").replace("*VID*","").replace("*CNT*","").replace("NOTE:","NOTE ")
 			item['title'] = item['title'].replace("\\/"," ").replace("\t"," ")
 			item['prerequisites'] = item['prerequisites'].replace("\\/"," ").replace("\n"," ")
