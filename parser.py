@@ -18,6 +18,7 @@ nsm.bind('focu', 'http://focu.io/schema#')
 course_counter = 0
 list_of_graph_entries = []
 list_of_indexes_of_resourceless_courses = []
+list_of_valid_graph_entries = []
 
 # Import all courses from Concordia
 file = open('final_copy.txt', 'r')
@@ -83,6 +84,7 @@ for line in lines:
 					topics.append(uri_ref)
 					break
 		course_data.update({'topics': topics})
+		list_of_valid_graph_entries.append(course_data)
 
 	# If response DOESN'T HAVE a Resource key, save index - to be populated later.
 	else:
@@ -91,23 +93,39 @@ for line in lines:
 
 	list_of_graph_entries.append(course_data)
 	course_counter += 1
-	if course_counter == 25:
-		break
+	# if course_counter == 50:
+	# 	break
 
-print("")
-print(len(list_of_indexes_of_resourceless_courses), " courses with missing Resources from Dbpedia Spotlight")
+# for ent in list_of_indexes_of_resourceless_courses:
+# 	print(list_of_graph_entries[ent])
+
+# print("")
+# print(len(list_of_indexes_of_resourceless_courses), " courses with missing Resources from Dbpedia Spotlight")
+
 
 
 # TODO: Add all COURSES from list_of_graph_entries to graph g
-# for entry in list_of_graph_entries:
-# 	print(entry)
-# g.add((subject_catalog, from_n3('focu:course_id', nsm=nsm), Literal(course_id)))
-# g.add((subject_catalog, RDF.type, from_n3('dbr:Course_(education)', nsm=nsm)))
-# g.add((subject_catalog, RDFS.label, Literal(title)))
-# g.add((subject_catalog, from_n3('focu:subject', nsm=nsm), Literal(subject)))
-# g.add((subject_catalog, from_n3('focu:catalog', nsm=nsm), Literal(catalog)))
-# g.add((subject_catalog, RDFS.comment, Literal(description)))
-# g.add((subject_catalog, FOAF.topic, uri_ref))
+for entry in list_of_valid_graph_entries:
+	subject_catalog = entry['subject_catalog']
+	title = entry['title']
+	subject = entry['subject']
+	catalog = entry['catalog']
+	description = entry['description']
+
+	# g.add((subject_catalog, from_n3('focu:course_id', nsm=nsm), Literal(course_id)))
+	g.add((subject_catalog, RDF.type, from_n3('dbr:Course_(education)', nsm=nsm)))
+	g.add((subject_catalog, RDFS.label, Literal(title)))
+	g.add((subject_catalog, from_n3('focu:subject', nsm=nsm), Literal(subject)))
+	g.add((subject_catalog, from_n3('focu:catalog', nsm=nsm), Literal(catalog)))
+	g.add((subject_catalog, RDFS.comment, Literal(description)))
+	for uri_ref in entry['topics']:
+		g.add((subject_catalog, FOAF.topic, uri_ref))
+
+serialized_graph = g.serialize(format='turtle')
+
+with open('test_graph.txt', 'w') as file:
+	file.write(serialized_graph.decode())
+
 
 # for s, p, o in g:
 # 	print(s, p, o)
