@@ -1,4 +1,4 @@
-import json
+import json,random
 import rdflib
 from rdflib import *
 from rdflib.namespace import *
@@ -134,15 +134,43 @@ for entry in list_of_valid_graph_entries:
 	for uri_ref in entry['topics']:
 		g.add((subject_catalog, FOAF.topic, uri_ref))
 
+
+
+
 ###################### END OF GRAPH CREATION ###########################
+
 
 
 student_1 = ["1", "Sean1", "Neas1", "sean1@123.com", [["2000", "ACCO435", "B"], ["2001", "ACCO310", "C"]]]
 student_2 = ["2", "Sean2", "Neas2", "sean2@123.com", [["2000", "ACTT201", "F"], ["2000", "ACCO435", "B"], ["2001", "ACCO595", "D"]]]
 
-students = [student_1, student_2]
+students=[student_1,student_2]
 
+def create_students():
+	student_list = []
+	firstname = "Sean"
+	lastname = "Neas"
+	grade_list = ["A","B","C","D","F"]
+	total_valid_class = len(list_of_valid_graph_entries)
 
+	for uid in range(1,101):
+		uid_str=str(uid)
+		stu_firstname=firstname+uid_str
+		stu_lastname=lastname+uid_str
+		email = (firstname+uid_str).lower()+"@123.com"
+
+		course_number = random.randint(4,40)
+		records_list=[]
+		for record_index in range(course_number):
+			year = str(random.randint(1990,2021))
+			course_index = random.randint(0,total_valid_class)
+			course = total_valid_class[course_index]
+			record = [year,course['subject']+course['catalog'],grade_list[random.randint(0,4)]]
+			records_list.append(record)
+		stduent=[uid_str,stu_firstname,stu_lastname,email,records_list]
+		student_list.append(student)
+
+	return student_list
 
 record_counter = 1
 
