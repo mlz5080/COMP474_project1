@@ -138,7 +138,7 @@ for entry in list_of_valid_graph_entries:
 
 
 student_1 = ["1", "Sean1", "Neas1", "sean1@123.com", [["2000", "ACCO435", "B"], ["2001", "ACCO310", "C"]]]
-student_2 = ["2", "Sean2", "Neas2", "sean2@123.com", [["2000", "ACTT201", "F"], ["2001", "ACCO595", "D"]]]
+student_2 = ["2", "Sean2", "Neas2", "sean2@123.com", [["2000", "ACTT201", "F"], ["2000", "ACCO435", "B"], ["2001", "ACCO595", "D"]]]
 
 students = [student_1, student_2]
 
@@ -292,15 +292,19 @@ while True:
 		topic_of_interest = topic_of_interest.replace(" ", "_")
 		target = rdflib.URIRef("http://dbpedia.org/resource/" + topic_of_interest)
 		q = prepareQuery(
-			"""SELECT ?course WHERE {
-				?course dbp:Course_(education) ?tar .
+			"""SELECT ?student WHERE {
+				?sub_cata foaf:topic ?tar .
+				?record focu:subject_catalog ?sub_cata .
+				?record focu:grade ?grade .
+				FILTER(?grade != "F") .
+				?student focu:hasRecord ?record
 			}""",
 			initNs = {
 				"tar": target, "dbp": "http://dbpedia.org/resource/" , "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
 			}
 		)
 		for row in g.query(q, initBindings={"tar": target}):
-			print(row)
+			print(row[0])
 
 
 	elif query_type is "6":
