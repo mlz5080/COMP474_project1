@@ -1,33 +1,56 @@
-import json,random
-import rdflib
-from rdflib import *
-from rdflib.namespace import *
-from rdflib.util import *
-from rdflib.plugins.sparql import *
-from SPARQLWrapper import SPARQLWrapper, JSON
-import requests
-from requests_futures.sessions import FuturesSession
+import json,random,sys,time,re, requests
+from rdflib import Graph, URIRef, Literal
+from rdflib.util import from_n3
+from rdflib.namespace import FOAF, RDF, RDFS, Namespace, NamespaceManager
 from concurrent.futures import as_completed
-import sys
-import time
-import re
+from rdflib.plugins.sparql import prepareQuery
+from requests_futures.sessions import FuturesSession
 
-# Knowledge Graph variables and namespace declaration
+
+#Knowledge Graph variable and namespace declaration
 dbp = Namespace("http://dbpedia.org/resource/")
 g = Graph()
-result = g.parse("test.xml", format="xml")
+result = g.parse("namespace.xml", format="xml")
 nsm = NamespaceManager(g)
 nsm.bind('dbr', 'http://dbpedia.org/resource/')
 nsm.bind('ex', 'http://example.org/')
 nsm.bind('focu', 'http://focu.io/schema#')
 course_counter = 0
-list_of_graph_entries = []
 list_of_indexes_of_resourceless_courses = []
 list_of_valid_graph_entries = []
+#End of variable and namespace declaration
+
+def create_students():
+	"""
+	Generate 100 "dummy" students. Each student has between 4-40 records (aka courses with an associated grade and semester)
+	:return:
+	"""
+	student_list = []
+	firstname = "Sean"
+	lastname = "Neas"
+	grade_list = ["A","B","C","D","F"]
+	total_valid_class = len(list_of_valid_graph_entries)
+	for uid in range(1,101):
+		uid_str=str(uid)
+		stu_firstname=firstname+uid_str
+		stu_lastname=lastname+uid_str
+		email = (firstname+uid_str).lower()+"@123.com"
+		course_number = random.randint(4,40)
+		records_list=[]
+		for record_index in range(course_number):
+			year = str(random.randint(1990,2021))
+			course_index = random.randint(0,total_valid_class-1)
+			course = list_of_valid_graph_entries[course_index]
+			record = [year,course['subject']+course['catalog'],grade_list[random.randint(0,4)]]
+			records_list.append(record)
+		student=[uid_str,stu_firstname,stu_lastname,email,records_list]
+		student_list.append(student)
+	return student_list
+#End of create_students()
 
 
-###################### BELOW IS GRAPH CREATION ###########################
-# Import all courses from Concordia
+###################################### BELOW IS GRAPH CREATION #######################################################
+# Import all courses generated from database_builder.py --> database.txt
 file = open('database.txt', 'r')
 lines = file.readlines()
 file.close()
@@ -36,7 +59,7 @@ file.close()
 for line in lines:
 	temp = json.loads(line)
 	
-	# COURSE
+	# COURSE INFORMATION
 	course_id = list(temp.keys())[0] 
 	title = temp[course_id]['title'] # Title (String)
 	subject = temp[course_id]['subject'] # Subject (String)
@@ -45,6 +68,7 @@ for line in lines:
 	description = temp[course_id]['description'] # Description (String)
 	subject_catalog = from_n3('ex:' + subject + catalog, nsm=nsm)
 
+	# Create course dict to store important values
 	course_data = {
 		"subject_catalog": subject_catalog,
 		"title": title,
@@ -60,7 +84,7 @@ for line in lines:
 	header = {'accept': "application/json"}
 	params = {"text": title + "," + description}
 	
-	# DBPEDIA SPOTLIGHT API CALLS; while loop until all courses have obtain their TOPICS
+	# DBPEDIA SPOTLIGHT API CALLS; while loop until course has obtain all TOPICS
 	while True:
 		dbpedia_spotlight_response = requests.get(base_url+api_annotate, headers=header, params=params)
 		# Sleep for 60seconds if API requests get blocked
@@ -76,7 +100,7 @@ for line in lines:
 			sys.stdout.flush()
 			break
 
-	# Dbpedia spotlight API response parsing
+	########## DBPEDIA SPOTLIGHT RESPONSE PARSING ###########
 	dbpedia_spotlight_string = dbpedia_spotlight_response.content.decode("utf-8")
 	dbpedia_spotlight_dict = json.loads(dbpedia_spotlight_string)
 	topics = []
@@ -97,29 +121,21 @@ for line in lines:
 	else:
 		course_data.update({'topics': "NO RESOURCES"})
 		list_of_indexes_of_resourceless_courses.append(course_counter)
-
-	list_of_graph_entries.append(course_data)
 	course_counter += 1
-	# if course_counter == 100:
+
+	# DEBUGGING LIMIT
+	# if course_counter == 25:
 	# 	break
-
-# for ent in list_of_indexes_of_resourceless_courses:
-# 	print(list_of_graph_entries[ent])
-
-# print("")
-# print(len(list_of_indexes_of_resourceless_courses), " courses with missing Resources from Dbpedia Spotlight")
+	############## END OF DBP RESPONSE PARSING ##############
 
 
-
-# TODO: Add all COURSES from list_of_graph_entries to graph g
+# Add all COURSES from list_of_valid_graph_entries to graph g
 for entry in list_of_valid_graph_entries:
 	subject_catalog = entry['subject_catalog']
 	title = entry['title']
 	subject = entry['subject']
 	catalog = entry['catalog']
 	description = entry['description']
-
-	# g.add((subject_catalog, from_n3('focu:course_id', nsm=nsm), Literal(course_id)))
 	g.add((subject_catalog, RDF.type, from_n3('dbr:Course_(education)', nsm=nsm)))
 	g.add((subject_catalog, RDFS.label, Literal(title)))
 	g.add((subject_catalog, from_n3('focu:subject', nsm=nsm), Literal(subject)))
@@ -128,48 +144,14 @@ for entry in list_of_valid_graph_entries:
 	for uri_ref in entry['topics']:
 		g.add((subject_catalog, FOAF.topic, uri_ref))
 
+#GRAPH CREATED!
+###################################### END OF GRAPH CREATION #########################################################
 
-
-
-###################### END OF GRAPH CREATION ###########################
-
-
-
-# student_1 = ["1", "Sean1", "Neas1", "sean1@123.com", [["2000", "ACCO435", "B"], ["2001", "ACCO310", "C"]]]
-# student_2 = ["2", "Sean2", "Neas2", "sean2@123.com", [["2000", "ACTT201", "F"], ["2000", "ACCO435", "B"], ["2001", "ACCO595", "D"]]]
-
-# students=[student_1,student_2]
-
-def create_students():
-	student_list = []
-	firstname = "Sean"
-	lastname = "Neas"
-	grade_list = ["A","B","C","D","F"]
-	total_valid_class = len(list_of_valid_graph_entries)
-
-	for uid in range(1,101):
-		uid_str=str(uid)
-		stu_firstname=firstname+uid_str
-		stu_lastname=lastname+uid_str
-		email = (firstname+uid_str).lower()+"@123.com"
-
-		course_number = random.randint(4,40)
-		records_list=[]
-		for record_index in range(course_number):
-			year = str(random.randint(1990,2021))
-			course_index = random.randint(0,total_valid_class-1)
-			course = list_of_valid_graph_entries[course_index]
-			record = [year,course['subject']+course['catalog'],grade_list[random.randint(0,4)]]
-			records_list.append(record)
-		student=[uid_str,stu_firstname,stu_lastname,email,records_list]
-		student_list.append(student)
-
-	return student_list
+#Generate bank of random students
 random_students = create_students()
-# print(random_students)
 
+###################################### Create Student node and add to g graph ###############################
 record_counter = 1
-
 for student in random_students:
 	_student = from_n3('ex:' + student[0] , nsm=nsm)
 	g.add((_student, RDF.type, from_n3('focu:student', nsm=nsm)))
@@ -183,14 +165,11 @@ for student in random_students:
 		g.add((_record, from_n3('focu:subject_catalog', nsm=nsm), from_n3('ex:' + records[1], nsm=nsm)))
 		g.add((_record, from_n3('focu:grade', nsm=nsm), Literal(records[2])))
 		record_counter += 1
-
-
-	# g.add((subject_catalog, from_n3('focu:course_id', nsm=nsm), Literal(course_id)))
-	# subject_catalog = from_n3('ex:' + subject + catalog, nsm=nsm)
-
-
 print("\n")
+###################################### End of Student addition to graph #####################################
 
+
+###################################### QUERY LOOP ####################################################################
 while True:
 	query_type = input("\nEnter 1 for number of triple in Knowledge Base"
 						"\nEnter 2 for total number of students, courses and topics"
@@ -199,41 +178,12 @@ while True:
 						"\nEnter 5 for all students familiar with a given topic"
 						"\nEnter 6 for all topics familiar to a given student"
 						"\n > ")
+	#QUESTION 1
 	if query_type is "1":
 		print("Number of triple(s) in Knowledge Base: ", len(g))
-
-
-# query_agent = g.query(
-# 	"""SELECT ?rec ?g ?sc
-# 		WHERE {		
-# 			<http://example.org/ELEC> focu:hasRecord ?rec .
-# 		}
-# 	""")
+	#QUESTION 2
 	elif query_type is "2":
-
 		# FIND COUNT OF STUDENTS
-		# target = rdflib.URIRef("http://focu.io/schema#student")
-		
-		# prep_q = prepareQuery(
-		# 	"""SELECT (COUNT(*) AS ?count) WHERE{
-		# 		?s rdf:type ?targetClass .
-		# 	}""",
-		# 	initNs = {
-		# 			"targetClass": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
-		# 		}
-		# 	)
-		# for row in g.query(prep_q, initBindings={"targetClass": target}):
-		# 	print("%s Students" % row)
-
-		# target = rdflib.URIRef("http://dbpedia.org/resource/Course_(education)")
-		# for row in g.query(prep_q, initBindings={"targetClass": target}):
-		# 	print("%s Courses" % row)
-
-		# target = rdflib.URIRef("http://xmlns.com/foaf/0.1/topic")
-		# for row in g.query(prep_q, initBindings={"targetClass": target}):
-		# 	print("%s Topics" % row)
-
-
 		q = g.query(
 			"""SELECT (COUNT(*) AS ?count)
 				WHERE {		
@@ -242,7 +192,6 @@ while True:
 			""")
 		for row in q:
 			print("%s Students" % row)
-		
 		# FIND COUNT OF COURSES
 		q = g.query(
 			"""SELECT (COUNT(*) AS ?count)
@@ -252,7 +201,6 @@ while True:
 			""")
 		for row in q:
 			print("%s Courses" % row)
-
 		# FIND COUNT OF TOPICS
 		topics_list = []
 		q = g.query(
@@ -267,11 +215,11 @@ while True:
 			if topic_of_row not in topics_list:
 				topics_list.append(topic_of_row)
 		print(len(topics_list), " Topics")
-
+	#QUESTION 3
 	elif query_type is "3":
 		course_sub_cata = input("Please enter the Subject Catalog (i.e. ACCO435) of a Course"
 								"\n > ")
-		target = rdflib.URIRef("http://example.org/" + course_sub_cata)
+		target = URIRef("http://example.org/" + course_sub_cata)
 		q_topic = prepareQuery(
 			"""SELECT ?topic WHERE {
 				?c_sub_cata foaf:topic ?topic
@@ -286,13 +234,11 @@ while True:
 			print("\n- Topic Label:")
 			print(topic_label.group(1).replace("_", " "))
 			print("- Dbpedia URL:\n", row[0])
-
-
-
+	#QUESTION 4
 	elif query_type is "4":
 		student_id = input("Please enter the ID of a given Student"
 							"\n > ")
-		target = rdflib.URIRef("http://example.org/" + student_id)
+		target = URIRef("http://example.org/" + student_id)
 		q = prepareQuery(
 				"""SELECT ?sem ?sc ?g  WHERE {
 					?s_id focu:hasRecord ?rec .
@@ -303,18 +249,17 @@ while True:
 				initNs = {
 					"s_id": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
 				}
-
 			)
 		print("Complete Courses for [Student " + student_id + "]")
 		for row in g.query(q, initBindings={"s_id": target}):
 			if str(row[2]) != "F":
 				print("%s %s %s" % row)
-
+	#QUESTION 5
 	elif query_type is "5":
 		topic_of_interest = input("Please enter the topic of interest"
 									"\n > ")
 		topic_of_interest = topic_of_interest.replace(" ", "_")
-		target = rdflib.URIRef("http://dbpedia.org/resource/" + topic_of_interest)
+		target = URIRef("http://dbpedia.org/resource/" + topic_of_interest)
 		q = prepareQuery(
 			"""SELECT ?student WHERE {
 				?sub_cata foaf:topic ?tar .
@@ -329,12 +274,11 @@ while True:
 		)
 		for row in g.query(q, initBindings={"tar": target}):
 			print(row[0])
-
-
+	#QUESTION 6
 	elif query_type is "6":
 		student_id = input("Please enter the ID of a given student"
 							"\n > ")
-		target = rdflib.URIRef("http://example.org/" + student_id)
+		target = URIRef("http://example.org/" + student_id)
 		q = prepareQuery(
 				"""SELECT ?topic WHERE {
 					?s_id focu:hasRecord ?rec .
@@ -345,39 +289,7 @@ while True:
 				initNs = {
 					"s_id": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
 				}
-
 			)
 		for row in g.query(q, initBindings={"s_id": target}):
 			print("%s" % row)
-
-		# query_agent = g.query(
-		# 	"""SELECT ?rec ?g ?sc ?topic
-		# 		WHERE {		
-		# 			?any_id focu:hasRecord ?rec .
-		# 			?rec focu:grade ?g .
-		# 			?rec focu:subject_catalog ?sc .
-		# 			?sc foaf:topic ?topic
-		# 		}
-		# 	""")
-
-# query_agent = g.query(
-# 	"""SELECT ?rec ?g ?sc
-# 		WHERE {		
-# 			<http://example.org/ELEC> focu:hasRecord ?rec .
-# 		}
-# 	""")
-
-
-	# for each_row in query_agent:
-	# 	print(each_row)
-
-
-
-# serialized_graph = g.serialize(format='turtle')
-
-# with open('test_graph.txt', 'w') as file:
-# 	file.write(serialized_graph.decode())
-
-
-# for s, p, o in g:
-# 	print(s, p, o)
+###################################### END OF LOOP QUERY ############################################################################
