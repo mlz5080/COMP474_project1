@@ -51,6 +51,7 @@ def create_students():
 
 ###################################### BELOW IS GRAPH CREATION #######################################################
 # Import all courses generated from database_builder.py --> database.txt
+
 file = open('database.txt', 'r')
 lines = file.readlines()
 file.close()
@@ -59,6 +60,7 @@ file.close()
 for line in lines:
 	temp = json.loads(line)
 	
+	#Step 1: Extract relevant entries from each database.txt datapoint
 	# COURSE INFORMATION
 	course_id = list(temp.keys())[0] 
 	title = temp[course_id]['title'] # Title (String)
@@ -77,6 +79,7 @@ for line in lines:
 		"career": career,
 		"description": description
 	}
+	#End of Step 1
 
 	# Dbpedia spotlight API variables and paths
 	base_url = "http://localhost:2222/rest"
@@ -84,6 +87,7 @@ for line in lines:
 	header = {'accept': "application/json"}
 	params = {"text": title + "," + description}
 	
+	#Step 2: Obtain Topics related to each course
 	# DBPEDIA SPOTLIGHT API CALLS; while loop until course has obtain all TOPICS
 	while True:
 		dbpedia_spotlight_response = requests.get(base_url+api_annotate, headers=header, params=params)
@@ -122,13 +126,14 @@ for line in lines:
 		course_data.update({'topics': "NO RESOURCES"})
 		list_of_indexes_of_resourceless_courses.append(course_counter)
 	course_counter += 1
+	#End of Step 2
 
 	# DEBUGGING LIMIT
 	# if course_counter == 25:
 	# 	break
 	############## END OF DBP RESPONSE PARSING ##############
 
-
+#Step 3: 
 # Add all COURSES from list_of_valid_graph_entries to graph g
 for entry in list_of_valid_graph_entries:
 	subject_catalog = entry['subject_catalog']
@@ -143,14 +148,15 @@ for entry in list_of_valid_graph_entries:
 	g.add((subject_catalog, RDFS.comment, Literal(description)))
 	for uri_ref in entry['topics']:
 		g.add((subject_catalog, FOAF.topic, uri_ref))
-
+#End of Step 3
 #GRAPH CREATED!
 ###################################### END OF GRAPH CREATION #########################################################
 
 #Generate bank of random students
+#Step 4: Generating Students and adding them to Knowledge Graph
 random_students = create_students()
 
-###################################### Create Student node and add to g graph ###############################
+###################################### Create Student and add to g graph ####################################
 record_counter = 1
 for student in random_students:
 	_student = from_n3('ex:' + student[0] , nsm=nsm)
@@ -166,6 +172,7 @@ for student in random_students:
 		g.add((_record, from_n3('focu:grade', nsm=nsm), Literal(records[2])))
 		record_counter += 1
 print("\n")
+#End of Step 4
 ###################################### End of Student addition to graph #####################################
 
 
