@@ -10,6 +10,7 @@ from requests_futures.sessions import FuturesSession
 from concurrent.futures import as_completed
 import sys
 import time
+import re
 
 # Knowledge Graph variables and namespace declaration
 dbp = Namespace("http://dbpedia.org/resource/")
@@ -247,7 +248,7 @@ while True:
 		course_sub_cata = input("Please enter the Subject Catalog (i.e. ACCO435) of a Course"
 								"\n > ")
 		target = rdflib.URIRef("http://example.org/" + course_sub_cata)
-		q = prepareQuery(
+		q_topic = prepareQuery(
 			"""SELECT ?topic WHERE {
 				?c_sub_cata foaf:topic ?topic
 			}""",
@@ -255,15 +256,13 @@ while True:
 				"c_sub_cata": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"			
 			}
 		)
+		label_topic_list = []
+		for row in g.query(q_topic, initBindings={"c_sub_cata": target}):
+			topic_label = re.match(r'.*/resource/(.*)', str(row[0]))
+			print("\n- Topic Label:")
+			print(topic_label.group(1).replace("_", " "))
+			print("- Dbpedia URL:\n", row[0])
 
-		sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-		for row in g.query(q, initBindings={"c_sub_cata": target}):
-			print("Topic: ", row[0])
-			string_query = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?label WHERE {" + row[0] + " rdfs:label ?label . }"
-				
-			sparql.setQuery(string_query)
-			results = sparql.query
-			print(results)
 
 
 	elif query_type is "4":
@@ -288,7 +287,21 @@ while True:
 				print("%s %s %s" % row)
 
 	elif query_type is "5":
-		pass
+		topic_of_interest = input("Please enter the topic of interest"
+									"\n > ")
+		topic_of_interest = topic_of_interest.replace(" ", "_")
+		target = rdflib.URIRef("http://dbpedia.org/resource/" + topic_of_interest)
+		q = prepareQuery(
+			"""SELECT ?course WHERE {
+				?course dbp:Course_(education) ?tar .
+			}""",
+			initNs = {
+				"tar": target, "dbp": "http://dbpedia.org/resource/" , "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
+			}
+		)
+		for row in g.query(q, initBindings={"tar": target}):
+			print(row)
+
 
 	elif query_type is "6":
 		student_id = input("Please enter the ID of a given student"
