@@ -1,0 +1,1143 @@
+Last login: Sun Mar  1 15:39:46 on ttys001
+lingmachine:project1 lingzhimo$ python3 con_open_api.py 
+
+
+{'title': 'THESIS', 'subject': 'ARTE', 'catalog': '698', 'career': 'GRAD', 'classUnit': '12.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'ARTE 698'}
+{'title': 'THESIS', 'subject': 'ARTE', 'catalog': '890', 'career': 'GRAD', 'classUnit': '63.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Includes thesis proposal and its approval by the Thesis Advisory Committee, Research (including any further study that may be required to gain needed expertise), written thesis and oral examination. Students are encouraged to periodically present their research-in-progress to academic and professional audiences.', 'sub_catalog': 'ARTE 890'}
+
+
+
+
+{'title': 'THESIS', 'subject': 'ARTE', 'catalog': '698A', 'career': 'GRAD', 'classUnit': '24.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'ARTE 698A'}
+{'title': 'THESIS', 'subject': 'ARTE', 'catalog': '890', 'career': 'GRAD', 'classUnit': '63.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Includes thesis proposal and its approval by the Thesis Advisory Committee, Research (including any further study that may be required to gain needed expertise), written thesis and oral examination. Students are encouraged to periodically present their research-in-progress to academic and professional audiences.', 'sub_catalog': 'ARTE 890'}
+
+
+
+
+{'title': 'TOPICS IN CIVIL ENGR I', 'subject': 'CIVI', 'catalog': '692', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'CIVI 692'}
+{'title': 'TOPICS IN CIVIL ENGR I', 'subject': 'CIVI', 'catalog': '691', 'career': 'GRAD', 'classUnit': '4.00', 'prerequisites': 'Reserve BCEE', 'crosslisted': 'null', 'description': 'Subject matter will vary from term to term and from year to year. Students may re-register for these courses, providing that the course content has changed. Changes in content will be indicated by the letter following the course number. e.g. CIVI 691A, CIVI 691B, etc.', 'sub_catalog': 'CIVI 691'}
+
+
+
+
+{'title': 'TOPICS COMPUTER ENGINEERING', 'subject': 'COEN', 'catalog': '498', 'career': 'UGRD', 'classUnit': '3.00', 'prerequisites': 'PREREQ COEN498', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'COEN 498'}
+{'title': 'TOPICS COMPUTER ENGINEERING', 'subject': 'COEN', 'catalog': '691', 'career': 'GRAD', 'classUnit': '4.00', 'prerequisites': 'This course is reserved for ECE students only.', 'crosslisted': 'null', 'description': '<b>Note:\xa0</b>Subject matter will vary from term to term and from year to year. Students may re-register for these courses, providing that the course content has changed. Changes in content will be indicated by the letter following the course number, e.g. COEN 691A, COEN 691B, etc.', 'sub_catalog': 'COEN 691'}
+
+
+
+
+{'title': 'MASTER S RESEARCH AND THESIS', 'subject': 'COMP', 'catalog': '792', 'career': 'GRAD', 'classUnit': '30.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'COMP 792'}
+{'title': 'MASTER S RESEARCH AND THESIS', 'subject': 'COMP', 'catalog': '7941', 'career': 'GRAD', 'classUnit': '29.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Students are required to submit a thesis prepared under the guidance of a faculty member appointed by the GCS Graduate Studies Committee. The thesis must represent the result of the student’s independent work undertaken after admission to the program. The thesis will be evaluated by a committee appointed by the GCS Graduate Studies Committee.', 'sub_catalog': 'COMP 7941'}
+
+
+
+
+{'title': 'MASTER S RESEARCH AND THESIS', 'subject': 'COMP', 'catalog': '7921', 'career': 'GRAD', 'classUnit': '30.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'COMP 7921'}
+{'title': 'MASTER S RESEARCH AND THESIS', 'subject': 'COMP', 'catalog': '7941', 'career': 'GRAD', 'classUnit': '29.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Students are required to submit a thesis prepared under the guidance of a faculty member appointed by the GCS Graduate Studies Committee. The thesis must represent the result of the student’s independent work undertaken after admission to the program. The thesis will be evaluated by a committee appointed by the GCS Graduate Studies Committee.', 'sub_catalog': 'COMP 7941'}
+
+
+
+
+{'title': 'TOPICS IN COMPUTER SCIENCE', 'subject': 'COMP', 'catalog': '498', 'career': 'UGRD', 'classUnit': '3.00', 'prerequisites': 'PREREQ COMP498', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'COMP 498'}
+{'title': 'TOPICS IN COMPUTER SCIENCE', 'subject': 'COMP', 'catalog': '499', 'career': 'UGRD', 'classUnit': '4.00', 'prerequisites': 'PREREQ COMP498', 'crosslisted': 'null', 'description': 'Prerequisite: Permission of the Department. This course may be offered in a given year upon the authorization of the Department. The content may vary from offering to offering and will be chosen to complement the available elective courses. Lectures: three hours per week. Laboratory: two hours per week.', 'sub_catalog': 'COMP 499'}
+
+
+
+
+{'title': 'DOCTORAL THESIS RESEARCH', 'subject': 'COMS', 'catalog': '895B', 'career': 'GRAD', 'classUnit': '60.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'COMS 895B'}
+{'title': 'DOCTORAL THESIS RESEARCH', 'subject': 'COMS', 'catalog': '896', 'career': 'GRAD', 'classUnit': '63.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'This seminar permits the in-depth examination of particular special topics in media and communication. Topics vary from year to year.', 'sub_catalog': 'COMS 896'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN COMS', 'subject': 'COMS', 'catalog': '399', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'COMS 399'}
+{'title': 'SELECTED TOPICS IN COMS', 'subject': 'COMS', 'catalog': '560', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'This course provides a foundation in the creative, critical and technical aspects of moving images, including an introduction to non-linear editing software.', 'sub_catalog': 'COMS 560'}
+
+
+
+
+{'title': 'TOPICS IN ENGINEERING I', 'subject': 'ENGR', 'catalog': '690', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'ENGR 690'}
+{'title': 'TOPICS IN ENGINEERING I', 'subject': 'ENGR', 'catalog': '691', 'career': 'GRAD', 'classUnit': '4.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Subject matter will vary from term to term and from year to year. Students may re-register for these courses, providing that the course content has changed. Changes in content will be indicated by the letter following the course number, e.g., CIVI 691A, CIVI 691B, etc.', 'sub_catalog': 'ENGR 691'}
+
+
+
+
+{'title': 'FILM PRODUCTION I', 'subject': 'FMPR', 'catalog': '610', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'FMPR 610'}
+{'title': 'FILM PRODUCTION I', 'subject': 'FMPR', 'catalog': '620', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Prerequisite: Enrolment in the Cinematic Arts MFA. This research-creation methods course develops theoretical frameworks within cross-disciplinary trajectories for contemporary cinematic practices. Students investigate the reciprocal affiliations between theory and creative process, and the cultural and discursive contexts in which various cinematic idioms reside. Practice-based methodologies reflect the objectives of the program. Through a combination of seminar discussions, studio experiments, screenings, readings, and individual writings, students situate their thesis research creation conceptually and reflect critically on their creative processes. Writing exercises provide the foundation of the research-creation thesis proposal. NOTE  Students who have received credit for FMPR 610 may not take this course for credit.', 'sub_catalog': 'FMPR 620'}
+
+
+
+
+{'title': 'FILM PRODUCTION II', 'subject': 'FMPR', 'catalog': '611', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'FMPR 611'}
+{'title': 'FILM PRODUCTION II', 'subject': 'FMPR', 'catalog': '621', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Prerequisite: Enrolment in the Cinematic Arts MFA; or a basic understanding of cinematographic principles such as exposure theory, lighting and camera-to-screen processes and written permission of the Graduate Program Director. Students address moving image aesthetics from a filmmaker-creators perspective through individual or group exercises and in-depth formal analyses. Moving from concept to screening, topics explored may include the poetics of light, spatialization, script visualization, improvised imaging, experimental optical processes, and analogue praxis. The overall focus of this course is on the relationships between methods, materials, and the formal or stylistic strategies used across diverse cinematic practices. NOTE  Students who have received credit for FMPR 611 may not take this course for credit.', 'sub_catalog': 'FMPR 621'}
+
+
+
+
+{'title': 'FILM PRODUCTION III', 'subject': 'FMPR', 'catalog': '612', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'FMPR 612'}
+{'title': 'FILM PRODUCTION III', 'subject': 'FMPR', 'catalog': '622', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Prerequisite: Enrolment in the Cinematic Arts MFA; or a basic knowledge of sound recording and post-production processes and written permission from the Graduate Program Director. This studio course addresses sound aesthetics and allows students to develop an individualized approach to the audiovisual relationship within cinematic contexts. Studio projects emphasize the composition of sound in combination with film production, animation, and other forms of moving-image media. Workshops in audio production complement screenings and readings. Topics may include auditory perception, sound for animation, documentary and fiction, music for screens, visual music, sound art, and sound re-recording. NOTE  Students who have received credit for FMPR 612 may not take this course for credit.', 'sub_catalog': 'FMPR 622'}
+
+
+
+
+{'title': 'FILM PRODUCTION IV', 'subject': 'FMPR', 'catalog': '613', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'FMPR 613'}
+{'title': 'FILM PRODUCTION IV', 'subject': 'FMPR', 'catalog': '623', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Prerequisite: FMPR 620. This studio course in methods and processes examines interdisciplinary and collaborative strategies of innovative cinematic processes in a diversity of genres. Through a combination of studio experiments, screenings and writings, the course engages topics such as division of labor and disciplinary specialization; poetics of space and temporality; cinematic technologies and exhibition modalities; creative producing strategies; and assessment of experimental processes and outcomes. The course culminates in a presentation of creative work and the thesis project proposal. NOTE  Students who have received credit for FMPR 613 may not take this course for credit.', 'sub_catalog': 'FMPR 623'}
+
+
+
+
+{'title': 'ADVANCED TOPICS IN GEOGRAPHY', 'subject': 'GEOG', 'catalog': '499', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'GEOG 499'}
+{'title': 'ADVANCED TOPICS IN GEOGRAPHY', 'subject': 'GEOG', 'catalog': '620', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. GEOG 620A, GEOG 620B, etc.', 'sub_catalog': 'GEOG 620'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '291', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'HIST 291'}
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '670', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>HIST 679 Tutorial in a Selected Area of History</b> (3 credits)', 'sub_catalog': 'HIST 670'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '291', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'HIST 291'}
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '870', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Subject matter varies from term to term and from year to year. Students may re-register for this course provided that the course content has changed. Changes in content are indicated by the letter following the course number, e.g. HIST 877A, HIST 877B, etc.', 'sub_catalog': 'HIST 870'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '299', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'HIST 299'}
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '670', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>HIST 679 Tutorial in a Selected Area of History</b> (3 credits)', 'sub_catalog': 'HIST 670'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '299', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'HIST 299'}
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '870', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Subject matter varies from term to term and from year to year. Students may re-register for this course provided that the course content has changed. Changes in content are indicated by the letter following the course number, e.g. HIST 877A, HIST 877B, etc.', 'sub_catalog': 'HIST 870'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '399', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'HIST 399'}
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '670', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>HIST 679 Tutorial in a Selected Area of History</b> (3 credits)', 'sub_catalog': 'HIST 670'}
+
+
+
+
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '399', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'HIST 399'}
+{'title': 'SELECTED TOPICS IN HISTORY', 'subject': 'HIST', 'catalog': '870', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Subject matter varies from term to term and from year to year. Students may re-register for this course provided that the course content has changed. Changes in content are indicated by the letter following the course number, e.g. HIST 877A, HIST 877B, etc.', 'sub_catalog': 'HIST 870'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '800', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 800'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '800', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 800'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '800', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 800'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '800', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 800'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '800', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 800'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '800', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 800'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '801', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 801'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '801', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 801'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '801', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 801'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '801', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 801'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '801', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 801'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '801', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 801'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '802', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 802'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '802', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 802'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '802', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 802'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '802', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 802'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '802', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 802'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '802', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 802'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '803', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 803'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '803', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 803'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '803', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 803'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '803', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 803'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '803', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 803'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '803', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 803'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '804', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 804'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '804', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 804'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '804', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 804'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '804', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 804'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '804', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 804'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '804', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 804'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '805', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 805'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '805', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 805'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '805', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 805'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '805', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 805'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '805', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 805'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '805', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 805'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '806', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 806'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '806', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 806'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '806', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 806'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '806', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 806'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '806', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 806'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '806', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 806'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '807', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 807'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '807', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 807'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '807', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 807'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '807', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 807'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '807', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 807'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '807', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 807'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '808', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 808'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '808', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 808'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '808', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 808'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '808', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 808'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '808', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 808'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '808', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 808'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '809', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 809'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '809', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 809'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '809', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 809'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '809', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 809'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '809', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 809'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '809', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 809'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '810', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 810'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '810', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 810'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '810', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 810'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '810', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 810'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '810', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 810'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '810', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 810'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '811', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 811'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '811', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 811'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '811', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 811'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '811', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 811'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '811', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 811'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '811', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 811'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '812', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 812'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '812', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 812'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '812', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 812'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '812', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 812'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '812', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 812'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '812', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 812'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '818', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 818'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '818', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 818'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '818', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 818'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '818', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 818'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '818', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 818'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '818', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 818'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '819', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 819'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '819', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 819'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '819', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 819'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '819', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 819'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '819', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 819'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '819', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 819'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '825', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 825'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '825', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 825'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '825', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 825'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '825', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 825'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '825', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 825'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '825', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 825'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '826', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 826'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '826', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 826'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '826', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 826'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '826', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 826'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '826', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 826'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '826', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 826'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '827', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 827'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '827', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 827'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '827', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 827'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '827', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 827'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '827', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 827'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '827', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 827'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '828', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 828'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '828', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 828'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '828', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 828'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '828', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 828'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '828', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 828'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '828', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 828'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '829', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 829'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '880', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 880'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '829', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 829'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '881', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 881'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '829', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 829'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '882', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 882'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '829', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 829'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '883', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 883'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '829', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 829'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '884', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': "A directed study\xa0course\xa0provides\xa0students with the opportunity to pursue advanced and focused work with individual faculty members in the fields that constitute the student's program of study. Directed study\xa0courses\xa0are designated\xa0by the course topic.", 'sub_catalog': 'HUMA 884'}
+
+
+
+
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '829', 'career': 'GRAD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'HUMA 829'}
+{'title': 'DIRECTED STUDIES', 'subject': 'HUMA', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'The content\xa0varies\xa0from term to term and from year to year. Students may\xa0reregister\xa0for this course, provided the course content has changed. Changes in content\xa0are\xa0indicated by\xa0the course topic\xa0following the\xa0HUMA 887\xa0course\xa0title.', 'sub_catalog': 'HUMA 886'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '622', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 622'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '624', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 624'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '626', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 626'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '627', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 627'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '628', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 628'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '629', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 629'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '631', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 631'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '632', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 632'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '634', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 634'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '638', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 638'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '820', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 820'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '826', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 826'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '827', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 827'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '831', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 831'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '839', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 839'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '620', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 620'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '621', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 621'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '623', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 623'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '625', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 625'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '630', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 630'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '633', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 633'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '635', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 635'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '636', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 636'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '637', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 637'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '639', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 639'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '698', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 698A, INDI 698B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 698'}
+
+
+
+
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '641', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 641'}
+{'title': 'MASTERS LEVEL STUDIES', 'subject': 'INDI', 'catalog': '686', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'This optional seminar addresses a topic or range of topics of relevance to the research interests of a cross-section of the students enrolled in the program.', 'sub_catalog': 'INDI 686'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '821', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 821'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '822', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 822'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '823', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 823'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '824', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 824'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '825', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 825'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '828', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 828'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '829', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 829'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '830', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 830'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '832', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 832'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '833', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 833'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '834', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 834'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '835', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 835'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '836', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 836'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '837', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 837'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '838', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 838'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '841', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 841'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' This optional seminar addresses a topic or range of topics of relevance to the research interests of a cross-section of the students enrolled in the program.', 'sub_catalog': 'INDI 886'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '844', 'career': 'GRAD', 'classUnit': '4.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 844'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '886', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' This optional seminar addresses a topic or range of topics of relevance to the research interests of a cross-section of the students enrolled in the program.', 'sub_catalog': 'INDI 886'}
+
+
+
+
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '844', 'career': 'GRAD', 'classUnit': '4.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see GRAD Calendar', 'sub_catalog': 'INDI 844'}
+{'title': 'DOCTORAL LEVEL STUDIES', 'subject': 'INDI', 'catalog': '898', 'career': 'GRAD', 'classUnit': '1.00', 'prerequisites': '', 'crosslisted': 'null', 'description': '<b>Note:</b> The content will vary from term to term and from year to year. Students may re-register for this course, provided the course content has changed. Changes in content will be indicated by a letter following the course number, e.g. INDI 898A, INDI 898B, etc. These courses will be graded pass/fail.', 'sub_catalog': 'INDI 898'}
+
+
+
+
+{'title': 'JAZZ ENSEMBLE I', 'subject': 'JPER', 'catalog': '220', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '   Never Taken Not Registered: CMUS300', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'JPER 220'}
+{'title': 'JAZZ ENSEMBLE I', 'subject': 'JPER', 'catalog': '221', 'career': 'UGRD', 'classUnit': '3.00', 'prerequisites': 'for students who have completed JAZZ 200 previously or concurrently.', 'crosslisted': 'null', 'description': 'A performance course in which students participate in various Concordia jazz ensembles. Prerequisite: JAZZ 200 previously or concurrently, or permission of the Department of Music upon successful audition.  NOTE  This is a full-year course. NOTE  Students are required to participate in public performances. NOTE  Students who have received credit for JPER 220 may not take this course for credit.', 'sub_catalog': 'JPER 221'}
+
+
+
+
+{'title': 'ADVANCED TOPICS IN PHIL', 'subject': 'PHIL', 'catalog': '499', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'PHIL 499'}
+{'title': 'ADVANCED TOPICS IN PHIL', 'subject': 'PHIL', 'catalog': '623', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' This course studies a central issue in philosophy of law, such as personality, property, rights, interpretation, responsibility, and punishment; or the jurisprudential perspective of such figures as Hart, Dworkin, Alexy, Luhmann, Weinrib, Waldron, Greenberg, Finnis, and Murphy.', 'sub_catalog': 'PHIL 623'}
+
+
+
+
+{'title': 'ADVANCED TOPICS IN PHIL', 'subject': 'PHIL', 'catalog': '499', 'career': 'UGRD', 'classUnit': '6.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'PHIL 499'}
+{'title': 'ADVANCED TOPICS IN PHIL', 'subject': 'PHIL', 'catalog': '650', 'career': 'GRAD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Subject matter varies from term to term and from year to year. Students may re-register for this course provided that the course content has changed. Changes in content are indicated by the letter following the course number, e.g. PHIL 656A, PHIL 656B, etc.', 'sub_catalog': 'PHIL 650'}
+
+
+
+
+{'title': 'INTERNSHIP', 'subject': 'POLI', 'catalog': '497', 'career': 'UGRD', 'classUnit': '3.00', 'prerequisites': '', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'POLI 497'}
+{'title': 'INTERNSHIP', 'subject': 'POLI', 'catalog': '693', 'career': 'GRAD', 'classUnit': '21.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' The Internship is a four-month job placement in either the public or private sector. Under the direction of a faculty supervisor, the student prepares an original, theoretical work that comprises a series of policy recommendations that contribute to the policy process in Canada.', 'sub_catalog': 'POLI 693'}
+
+
+
+
+{'title': 'TOPICS SOFTWARE ENGINEERING', 'subject': 'SOEN', 'catalog': '498', 'career': 'UGRD', 'classUnit': '3.00', 'prerequisites': 'PREREQ SOEN498', 'crosslisted': 'null', 'description': 'Please see UGRD Calendar', 'sub_catalog': 'SOEN 498'}
+{'title': 'TOPICS SOFTWARE ENGINEERING', 'subject': 'SOEN', 'catalog': '691', 'career': 'GRAD', 'classUnit': '4.00', 'prerequisites': '', 'crosslisted': 'null', 'description': ' Subject matter will vary from term to term and from year to year. Students may re-register for this course, providing that the course content has changed. Changes in content will be indicated by the letter following the course number, e.g. SOEN 691A, SOEN 691B, etc.', 'sub_catalog': 'SOEN 691'}
+
+
+lingmachine:project1 lingzhimo$ 
