@@ -106,8 +106,8 @@ for line in lines:
 
 	list_of_graph_entries.append(course_data)
 	course_counter += 1
-	if course_counter == 100:
-		break
+	# if course_counter == 100:
+	# 	break
 
 # for ent in list_of_indexes_of_resourceless_courses:
 # 	print(list_of_graph_entries[ent])
@@ -141,10 +141,10 @@ for entry in list_of_valid_graph_entries:
 
 
 
-student_1 = ["1", "Sean1", "Neas1", "sean1@123.com", [["2000", "ACCO435", "B"], ["2001", "ACCO310", "C"]]]
-student_2 = ["2", "Sean2", "Neas2", "sean2@123.com", [["2000", "ACTT201", "F"], ["2000", "ACCO435", "B"], ["2001", "ACCO595", "D"]]]
+# student_1 = ["1", "Sean1", "Neas1", "sean1@123.com", [["2000", "ACCO435", "B"], ["2001", "ACCO310", "C"]]]
+# student_2 = ["2", "Sean2", "Neas2", "sean2@123.com", [["2000", "ACTT201", "F"], ["2000", "ACCO435", "B"], ["2001", "ACCO595", "D"]]]
 
-students=[student_1,student_2]
+# students=[student_1,student_2]
 
 def create_students():
 	student_list = []
@@ -163,18 +163,20 @@ def create_students():
 		records_list=[]
 		for record_index in range(course_number):
 			year = str(random.randint(1990,2021))
-			course_index = random.randint(0,total_valid_class)
-			course = total_valid_class[course_index]
+			course_index = random.randint(0,total_valid_class-1)
+			course = list_of_valid_graph_entries[course_index]
 			record = [year,course['subject']+course['catalog'],grade_list[random.randint(0,4)]]
 			records_list.append(record)
-		stduent=[uid_str,stu_firstname,stu_lastname,email,records_list]
+		student=[uid_str,stu_firstname,stu_lastname,email,records_list]
 		student_list.append(student)
 
 	return student_list
+random_students = create_students()
+# print(random_students)
 
 record_counter = 1
 
-for student in students:
+for student in random_students:
 	_student = from_n3('ex:' + student[0] , nsm=nsm)
 	g.add((_student, RDF.type, from_n3('focu:student', nsm=nsm)))
 	g.add((_student, FOAF.firstName, Literal(student[1])))
