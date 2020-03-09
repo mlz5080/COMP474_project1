@@ -28,6 +28,7 @@ if __name__ == '__main__':
 							"\nEnter 4 for all completed courses for a given student"
 							"\nEnter 5 for all students familiar with a given topic"
 							"\nEnter 6 for all topics familiar to a given student"
+							#"\nEnter 7 for launching custom query"
 							"\n > ")
 		#QUESTION 1
 		if query_type is "1":
@@ -168,3 +169,18 @@ if __name__ == '__main__':
 				answer = answer + ("%s" % row) + "\n"
 			log_output("6", answer)
 	###################################### END OF LOOP QUERY ############################################################################
+		#CUSTOM QUERY
+		# elif query_type is "7":
+		# 	custom_input = input("Enter custom input:"
+		# 							"\n > ")
+		# 	target = URIRef()
+		# 	q = prepareQuery(
+		# 			"""SELECT ?s ?o ?p WHERE {
+		# 				#ENTER CUSTOMER QUERY HERE!
+		# 			}""",
+		# 			initNs = {
+		# 				"tar": target, "dbp": "http://dbpedia.org/resource/", "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
+		# 			}
+		# 		)
+		# 	for row in g.query(q, initBindings={"tar": target}):
+		# 		print("%s" % row)
