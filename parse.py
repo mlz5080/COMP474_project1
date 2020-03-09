@@ -130,8 +130,8 @@ for line in lines:
 	#End of Step 2
 
 	# DEBUGGING LIMIT
-	if course_counter == 25:
-		break
+	# if course_counter == 25:
+	# 	break
 	############## END OF DBP RESPONSE PARSING ##############
 
 #Step 3: 
