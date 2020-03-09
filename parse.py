@@ -8,7 +8,7 @@ from rdflib.plugins.sparql import prepareQuery
 #Knowledge Graph variable and namespace declaration
 dbp = Namespace("http://dbpedia.org/resource/")
 g = Graph()
-result = g.parse("schema.ttl", format="turtle")
+result = g.parse("schema.xml", format="xml")
 nsm = NamespaceManager(g)
 nsm.bind('dbr', 'http://dbpedia.org/resource/')
 nsm.bind('ex', 'http://example.org/')
@@ -16,6 +16,7 @@ nsm.bind('focu', 'http://focu.io/schema#')
 course_counter = 0
 list_of_indexes_of_resourceless_courses = []
 list_of_valid_graph_entries = []
+concordia_university = URIRef('http://dbpedia.org/resource/Concordia_University')
 #End of variable and namespace declaration
 
 def create_students():
@@ -95,7 +96,7 @@ for line in lines:
 			print("Blocked")
 			time.sleep(60)
 		else:
-			ite_num = str(course_counter) + "/" + str(len(lines))
+			ite_num = str(course_counter) + "/" + str(len(lines)-1)
 			precent = float(course_counter / len(lines))
 			hashes = '#' * int(round(precent * 20))
 			spaces = ' ' * (20 - len(hashes))
@@ -145,6 +146,7 @@ for entry in list_of_valid_graph_entries:
 	g.add((subject_catalog, from_n3('focu:subject', nsm=nsm), Literal(subject)))
 	g.add((subject_catalog, from_n3('focu:catalog', nsm=nsm), Literal(catalog)))
 	g.add((subject_catalog, RDFS.comment, Literal(description)))
+	g.add((subject_catalog, from_n3('focu:offeredAt', nsm=nsm), concordia_university))
 	for uri_ref in entry['topics']:
 		g.add((subject_catalog, FOAF.topic, uri_ref))
 		# topic = re.match(r'.*/resource/(.*)', uri_ref)
