@@ -12,7 +12,6 @@
 	foaf:name "Concordia University";
 	rdfs:seeAlso dbr:Concordia_University.
 
-
 focu:Student
 	a rdfs:Class;
 	rdfs:subClassOf foaf:Person;
@@ -65,3 +64,11 @@ focu:semester
 	rdfs:range xsd:string;
 	rdfs:label "Semester"@en;
 	rdfs:comment "The year in which the course associated to the Record took place."@en.
+
+focu:offeredAt
+	a rdf:Property;
+	rdfs:domain dbr:Course_\(education\);
+	rdfs:range dbr:Public_university;
+	rdfs:label "Offered At"@en;
+	rdfs:comment "A university course is offered at the associated university."@en.
+
