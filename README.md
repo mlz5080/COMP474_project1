@@ -15,7 +15,8 @@ database.txt
 database_builder.py
 
 # Knowledge Base;
-parse.py - Builds the Knowledge Graph with docker image of DBpedia Spotlight running locally
+parse.py - Builds the Knowledge Graph with docker image of DBpedia Spotlight running locally. Use the following command to RUN DOCKER LOCALLY
+>sudo docker run -i -p 2222:80 dbpedia/spotlight-english spotlight.sh
 
 query.py - Allows a user to query Knowledge Graph with questions from Assignment description
 
