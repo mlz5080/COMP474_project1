@@ -12,7 +12,10 @@ schema.ttl
 database.txt
 
 # Knowledge Base Construction;
-database_builder.py
+database_builder.py - Please use the following command to install python's dependencies.
+>pip install rdflib
+>pip install requests
+>pip install requests-futures
 
 # Knowledge Base;
 parse.py - Builds the Knowledge Graph with docker image of DBpedia Spotlight running locally. Use the following command to RUN DOCKER LOCALLY
