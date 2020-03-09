@@ -1,0 +1,26 @@
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COEN320
+College of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificFlag semaphore
+http://dbpedia.org/resource/Flag_semaphoreInter-process communication
+http://dbpedia.org/resource/Inter-process_communicationCoen River
+http://dbpedia.org/resource/Coen_RiverDataflow programming
+http://dbpedia.org/resource/Dataflow_programmingVxWorks
+http://dbpedia.org/resource/VxWorksException handling
+http://dbpedia.org/resource/Exception_handlingTime
+http://dbpedia.org/resource/TimeMemory management
+http://dbpedia.org/resource/Memory_managementUniprocessor system
+http://dbpedia.org/resource/Uniprocessor_systemAlgorithm
+http://dbpedia.org/resource/AlgorithmDesign Issues
+http://dbpedia.org/resource/Design_IssuesFault tolerance
+http://dbpedia.org/resource/Fault_toleranceSynchronization
+http://dbpedia.org/resource/SynchronizationSpecification language
+http://dbpedia.org/resource/Specification_languageQNX
+http://dbpedia.org/resource/QNXPetri net
+http://dbpedia.org/resource/Petri_netReal-time operating system
+http://dbpedia.org/resource/Real-time_operating_systemConcurrent computing
+http://dbpedia.org/resource/Concurrent_computingPOSIX Threads
+http://dbpedia.org/resource/POSIX_ThreadsInterrupt
+http://dbpedia.org/resource/Interrupt

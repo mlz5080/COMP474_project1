@@ -1,0 +1,21 @@
+
+NEW QUERY:
+Please enter the ID of a given Student
+ > 1
+2010 http://example.org/EXCI233 A
+2016 http://example.org/THEO302 C
+2010 http://example.org/INDI639F A
+2011 http://example.org/COMS876 C
+1990 http://example.org/GPWL905 C
+2005 http://example.org/RELI388 A
+2021 http://example.org/MBA651 B
+1994 http://example.org/GERM310 A
+2006 http://example.org/POLI416 B
+2014 http://example.org/SOCI341 A
+2001 http://example.org/POLI693 C
+1998 http://example.org/EXCI445 C
+2020 http://example.org/TESL467 C
+1996 http://example.org/JOUR535 B
+2014 http://example.org/TESL498 A
+2003 http://example.org/COMS698 A
+

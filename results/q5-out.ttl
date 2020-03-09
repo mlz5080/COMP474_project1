@@ -1,0 +1,73 @@
+
+NEW QUERY:
+Please enter the topic of interest
+ > Gene_expression
+http://example.org/16
+http://example.org/8
+http://example.org/21
+http://example.org/50
+http://example.org/32
+http://example.org/45
+http://example.org/76
+http://example.org/72
+http://example.org/28
+http://example.org/17
+http://example.org/8
+
+
+NEW QUERY:
+Please enter the topic of interest
+ > Transmission
+
+
+NEW QUERY:
+Please enter the topic of interest
+ > Arts
+
+
+NEW QUERY:
+Please enter the topic of interest
+ > Medicine
+http://example.org/98
+http://example.org/78
+
+
+NEW QUERY:
+Please enter the topic of interest
+ > Medicine
+http://example.org/78
+http://example.org/98
+
+
+NEW QUERY:
+Please enter the topic of interest
+ > Transmission
+
+
+NEW QUERY:
+Please enter the topic of interest
+ > Psychology
+http://example.org/55
+http://example.org/9
+http://example.org/58
+http://example.org/75
+http://example.org/20
+http://example.org/6
+http://example.org/79
+http://example.org/30
+http://example.org/88
+http://example.org/22
+http://example.org/26
+http://example.org/92
+http://example.org/58
+http://example.org/66
+http://example.org/32
+http://example.org/73
+http://example.org/90
+http://example.org/86
+http://example.org/5
+http://example.org/17
+http://example.org/30
+http://example.org/87
+http://example.org/14
+
