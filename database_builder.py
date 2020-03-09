@@ -20,6 +20,7 @@ print("Builder launched [...]")
 test_file = "database.txt"
 #End of variable declaration
 
+#Step 1 CONCORDIA’S OPEN DATA api call ( api_call() )
 def api_call():
 	"""
 	This function will make requests to Concordia's opendata api to get 
@@ -64,7 +65,7 @@ def api_call():
 			file.write("\n")
 #End of api_call()
 
-def grad_scheme(course_dict,miss_description_course_dict,soup,eng):
+def parse_graduate_content(course_dict,miss_description_course_dict,soup,eng):
 	"""
 	This function will parse concordia graduate calendar webpage's content to
 	retrive graduate class' description
@@ -121,6 +122,7 @@ def grad_scheme(course_dict,miss_description_course_dict,soup,eng):
 							miss_description_course_dict[key]['description']=span.string
 #End of grad_scheme()
 
+#Step 2 Crawling Concordia's undergraduate calendar
 def undergrad_scheme():
 	"""
 	This function will crawl concordia's undergraduate calendar to get description
@@ -189,6 +191,7 @@ def undergrad_scheme():
 			file.write("\n")
 #End of undergrad_scheme()
 
+#Step 3 Crawling Concordia's graduate calendar
 def graduate_scheme():
 	"""
 	This function will crawl concordia's graduate calendar to get description
@@ -255,9 +258,9 @@ def graduate_scheme():
 		h1 = soup.find_all("h1")
 		for i in h1:
 			if "Engineering Courses" in i:
-				grad_scheme(miss_description_course_dict,course_dict,soup,True)
+				parse_graduate_content(miss_description_course_dict,course_dict,soup,True)
 			else:
-				grad_scheme(miss_description_course_dict,course_dict,soup,False)
+				parse_graduate_content(miss_description_course_dict,course_dict,soup,False)
 
 	miss_description_course_dict={}
 	for key,val in course_dict.items():
@@ -281,4 +284,3 @@ if __name__ == '__main__':
 	graduate_scheme()
 	print("Graduate scheme built")
 	print("Database complete")
-	
