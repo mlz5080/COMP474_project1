@@ -1,0 +1,27 @@
+# FIND COUNT OF STUDENTS
+q = g.query(
+	"""SELECT (COUNT(*) AS ?count)
+		WHERE {		
+			?s rdf:type focu:student .
+		}
+	""")
+for row in q:
+	print("%s Students" % row)
+# FIND COUNT OF COURSES
+q = g.query(
+	"""SELECT (COUNT(*) AS ?count)
+		WHERE {		
+			?s rdf:type <http://dbpedia.org/resource/Course_(education)> .
+		}
+	""")
+for row in q:
+	print("%s Courses" % row)
+# FIND COUNT OF TOPICS
+topics_list = []
+q = g.query(
+	"""SELECT DISTINCT ?o
+		WHERE {		
+			?s foaf:topic ?o .
+		}
+		GROUP BY ?o
+	""")

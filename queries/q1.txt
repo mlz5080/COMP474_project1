@@ -1,0 +1,2 @@
+if query_type is "1":
+	print("Number of triple(s) in Knowledge Base: ", len(g))

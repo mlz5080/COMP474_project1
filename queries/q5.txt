@@ -1,0 +1,16 @@
+elif query_type is "5":
+	topic_of_interest = input("Please enter the topic of interest"
+								"\n > ")
+	topic_of_interest = topic_of_interest.replace(" ", "_")
+	target = URIRef("http://dbpedia.org/resource/" + topic_of_interest)
+	q = prepareQuery(
+		"""SELECT ?student WHERE {
+			?sub_cata foaf:topic ?tar .
+			?record focu:subject_catalog ?sub_cata .
+			?record focu:grade ?grade .
+			FILTER(?grade != "F") .
+			?student focu:hasRecord ?record
+		}""",
+		initNs = {
+			"tar": target, "dbp": "http://dbpedia.org/resource/" , "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
+		}
