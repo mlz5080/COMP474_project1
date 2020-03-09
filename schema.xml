@@ -25,11 +25,25 @@
     <rdfs:domain rdf:resource="http://example.org/Student"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#grade">
+    <rdfs:comment xml:lang="en">A single letter measuring the performance in the course of the associated Record.</rdfs:comment>
+    <rdfs:label xml:lang="en">Letter grade</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/Record"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://focu.io/schema#catalog">
     <rdfs:comment xml:lang="en">An integer number which uniquely identifies a course within a particular discipline.</rdfs:comment>
     <rdfs:label xml:lang="en">Course number</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://www.dbpedia.org/resource/Course_(education)"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#semester">
+    <rdfs:comment xml:lang="en">The year in which the course associated to the Record took place.</rdfs:comment>
+    <rdfs:label xml:lang="en">Semester</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/Record"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://focu.io/schema#Record">
