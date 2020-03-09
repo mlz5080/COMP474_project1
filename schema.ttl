@@ -3,8 +3,15 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix focu: <http://focu.io/schema#> .
-@prefix dbo: <http://www.dbpedia.org/resource/>.
+@prefix dbo: <http://www.dbpedia.org/ontology/>.
+@prefix dbr: <http://www.dbpedia.org/resource/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<Concordia>
+	dbo:type dbr:Public_university;
+	foaf:name "Concordia University";
+	rdfs:seeAlso dbr:Concordia_University.
+
 
 focu:Student
 	a rdfs:Class;
@@ -26,14 +33,14 @@ focu:hasRecord
 
 focu:subject 
 	a rdf:Property;
-	rdfs:domain dbo:Course_\(education\); 
+	rdfs:domain dbr:Course_\(education\); 
 	rdfs:range xsd:string;
 	rdfs:label "Discipline of course"@en;
 	rdfs:comment "An abbreviation for the discipline or department under which an academic course falls"@en.
 
 focu:catalog
 	a rdf:Property;
-	rdfs:domain dbo:Course_\(education\);
+	rdfs:domain dbr:Course_\(education\);
 	rdfs:range xsd:string;
 	rdfs:label "Course number"@en;
 	rdfs:comment "An integer number which uniquely identifies a course within a particular discipline."@en.
