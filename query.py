@@ -8,9 +8,6 @@ from rdflib.plugins.sparql import prepareQuery
 if __name__ == '__main__':
 	g = Graph()
 	result = g.parse("knowledge_base.txt", format="turtle")
-
-	
-	
 	while True:
 		query_type = input("\nEnter 1 for number of triple in Knowledge Base"
 							"\nEnter 2 for total number of students, courses and topics"
@@ -54,7 +51,7 @@ if __name__ == '__main__':
 			for row in q:
 				topic_of_row = row[0]
 				if topic_of_row not in topics_list:
-					topics_list.append(topicpic_of_row)
+					topics_list.append(topic_of_row)
 			print(len(topics_list), " Topics")
 		#QUESTION 3
 		elif query_type is "3":
