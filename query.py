@@ -54,7 +54,7 @@ if __name__ == '__main__':
 			for row in q:
 				topic_of_row = row[0]
 				if topic_of_row not in topics_list:
-					topics_list.append(topic_of_row)
+					topics_list.append(topicpic_of_row)
 			print(len(topics_list), " Topics")
 		#QUESTION 3
 		elif query_type is "3":
@@ -124,6 +124,7 @@ if __name__ == '__main__':
 					"""SELECT ?topic WHERE {
 						?s_id focu:hasRecord ?rec .
 						?rec focu:grade ?g .
+						FILTER(?g != "F")
 						?rec focu:subject_catalog ?sc .
 						?sc foaf:topic ?topic
 					}""",
