@@ -19,3 +19,26 @@ Please enter the ID of a given Student
 2014 http://example.org/TESL498 A
 2003 http://example.org/COMS698 A
 
+
+NEW QUERY:
+Please enter the ID of a given Student
+ > 12
+1998 http://example.org/ECON414 A
+2011 http://example.org/ARTH362 D
+1998 http://example.org/MECH7501 D
+1997 http://example.org/POLI335 D
+1997 http://example.org/THEO605 A
+2018 http://example.org/ECON403 A
+1993 http://example.org/BIOL484 D
+1991 http://example.org/FLIT371 C
+2013 http://example.org/FRAN304 D
+2019 http://example.org/ARTH370 D
+2018 http://example.org/GERM241 A
+1993 http://example.org/FRAN321 A
+2000 http://example.org/MATH881 D
+1993 http://example.org/ENCS393 C
+1990 http://example.org/IRST498 C
+2009 http://example.org/EDUC264 B
+2002 http://example.org/ART448 C
+2016 http://example.org/ARTT470 D
+

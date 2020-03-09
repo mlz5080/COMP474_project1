@@ -71,3 +71,9 @@ http://example.org/30
 http://example.org/87
 http://example.org/14
 
+
+NEW QUERY:
+Please enter the topic of interest
+ > QNX
+http://example.org/3
+

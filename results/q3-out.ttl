@@ -24,3 +24,29 @@ http://dbpedia.org/resource/Real-time_operating_systemConcurrent computing
 http://dbpedia.org/resource/Concurrent_computingPOSIX Threads
 http://dbpedia.org/resource/POSIX_ThreadsInterrupt
 http://dbpedia.org/resource/Interrupt
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COEN320
+College of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificCoen River
+http://dbpedia.org/resource/Coen_RiverQNX
+http://dbpedia.org/resource/QNXReal-time operating system
+http://dbpedia.org/resource/Real-time_operating_systemAlgorithm
+http://dbpedia.org/resource/AlgorithmFlag semaphore
+http://dbpedia.org/resource/Flag_semaphoreTime
+http://dbpedia.org/resource/TimeException handling
+http://dbpedia.org/resource/Exception_handlingMemory management
+http://dbpedia.org/resource/Memory_managementVxWorks
+http://dbpedia.org/resource/VxWorksPetri net
+http://dbpedia.org/resource/Petri_netDesign Issues
+http://dbpedia.org/resource/Design_IssuesInterrupt
+http://dbpedia.org/resource/InterruptUniprocessor system
+http://dbpedia.org/resource/Uniprocessor_systemFault tolerance
+http://dbpedia.org/resource/Fault_tolerancePOSIX Threads
+http://dbpedia.org/resource/POSIX_ThreadsSynchronization
+http://dbpedia.org/resource/SynchronizationInter-process communication
+http://dbpedia.org/resource/Inter-process_communicationConcurrent computing
+http://dbpedia.org/resource/Concurrent_computingSpecification language
+http://dbpedia.org/resource/Specification_languageDataflow programming
+http://dbpedia.org/resource/Dataflow_programming
