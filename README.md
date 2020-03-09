@@ -20,7 +20,8 @@ parse.py - Builds the Knowledge Graph with docker image of DBpedia Spotlight run
 query.py - Allows a user to query Knowledge Graph with questions from Assignment description
 
 # Queries and their results;
-Queries found in [path-to-project]/COMP474_project1/queries directory
-Results are found in the [path-to-project]COMP474_project1/results directory
+Queries; found in [path-to-project]/COMP474_project1/queries directory
+
+Results; found in the [path-to-project]COMP474_project1/results directory
 
 
