@@ -44,3 +44,17 @@ focu:subject_catalog
 	rdfs:range xsd:string;
 	rdfs:label "Unique identifier for a course"@en;
 	rdfs:comment "An abbreviated course displicine and course number which combined uniquely identifies any university course within that academic institution."@en.
+
+focu:grade
+	a rdf:Property;
+	rdfs:domain <Record>;
+	rdfs:range xsd:string;
+	rdfs:label "Letter grade"@en;
+	rdfs:comment "A single letter measuring the performance in the course of the associated Record."@en.
+
+focu:semester
+	a rdf:Property;
+	rdfs:domain <Record>;
+	rdfs:range xsd:string;
+	rdfs:label "Semester"@en;
+	rdfs:comment "The year in which the course associated to the Record took place."@en.
