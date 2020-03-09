@@ -8,7 +8,7 @@ from rdflib.plugins.sparql import prepareQuery
 #Knowledge Graph variable and namespace declaration
 dbp = Namespace("http://dbpedia.org/resource/")
 g = Graph()
-result = g.parse("namespace.xml", format="xml")
+result = g.parse("schema.ttl", format="turtle")
 nsm = NamespaceManager(g)
 nsm.bind('dbr', 'http://dbpedia.org/resource/')
 nsm.bind('ex', 'http://example.org/')
