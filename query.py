@@ -28,7 +28,8 @@ if __name__ == '__main__':
 							"\nEnter 4 for all completed courses for a given student"
 							"\nEnter 5 for all students familiar with a given topic"
 							"\nEnter 6 for all topics familiar to a given student"
-							#"\nEnter 7 for launching custom query"
+							"\nEnter 7 to show students, courses and terms in which students have failed"
+							"\nEnter 8 to show all courses offered by FMST"
 							"\n > ")
 		#QUESTION 1
 		if query_type is "1":
@@ -169,18 +170,40 @@ if __name__ == '__main__':
 				answer = answer + ("%s" % row) + "\n"
 			log_output("6", answer)
 	###################################### END OF LOOP QUERY ############################################################################
-		#CUSTOM QUERY
-		# elif query_type is "7":
-		# 	custom_input = input("Enter custom input:"
-		# 							"\n > ")
-		# 	target = URIRef()
-		# 	q = prepareQuery(
-		# 			"""SELECT ?s ?o ?p WHERE {
-		# 				#ENTER CUSTOMER QUERY HERE!
-		# 			}""",
-		# 			initNs = {
-		# 				"tar": target, "dbp": "http://dbpedia.org/resource/", "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
-		# 			}
-		# 		)
-		# 	for row in g.query(q, initBindings={"tar": target}):
-		# 		print("%s" % row)
+		#CUSTOM QUERY 7
+		elif query_type is "7":
+			q = prepareQuery(
+					"""SELECT ?title ?fname ?lname ?term WHERE {
+						?rec focu:grade "F" .
+						?rec focu:subject_catalog ?course .
+						?course rdfs:label ?title .
+						?stu focu:hasRecord ?rec .
+						?stu foaf:firstName ?fname .
+						?stu foaf:lastName ?lname .
+						?rec focu:semester ?term .
+					}""",
+					initNs = {
+						"dbp": "http://dbpedia.org/resource/", "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
+					}
+				)
+			for row in g.query(q):
+				print("%s %s %s %s" % row)
+
+		#CUSTOM QUERY 8
+		elif query_type is "8":
+			q = prepareQuery(
+					"""SELECT ?sub ?cata ?title WHERE {
+						?course focu:subject "FMST" .
+						?course focu:subject ?sub .
+						?course focu:catalog ?cata .
+						?course rdfs:label ?title .
+					}""",
+					initNs = {
+						"dbp": "http://dbpedia.org/resource/", "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
+					}
+				)
+			count = 1
+			for row in g.query(q):
+				count += 1 
+				print("%s%s %s" % row)
+			print(count)

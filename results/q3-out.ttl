@@ -50,3 +50,47 @@ http://dbpedia.org/resource/Inter-process_communicationConcurrent computing
 http://dbpedia.org/resource/Concurrent_computingSpecification language
 http://dbpedia.org/resource/Specification_languageDataflow programming
 http://dbpedia.org/resource/Dataflow_programming
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COEN320
+Exception handling
+http://dbpedia.org/resource/Exception_handlingPetri net
+http://dbpedia.org/resource/Petri_netInter-process communication
+http://dbpedia.org/resource/Inter-process_communicationUniprocessor system
+http://dbpedia.org/resource/Uniprocessor_systemFlag semaphore
+http://dbpedia.org/resource/Flag_semaphoreAlgorithm
+http://dbpedia.org/resource/AlgorithmPOSIX Threads
+http://dbpedia.org/resource/POSIX_ThreadsSpecification language
+http://dbpedia.org/resource/Specification_languageTime
+http://dbpedia.org/resource/TimeCoen River
+http://dbpedia.org/resource/Coen_RiverSynchronization
+http://dbpedia.org/resource/SynchronizationInterrupt
+http://dbpedia.org/resource/InterruptCollege of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificFault tolerance
+http://dbpedia.org/resource/Fault_toleranceConcurrent computing
+http://dbpedia.org/resource/Concurrent_computingReal-time operating system
+http://dbpedia.org/resource/Real-time_operating_systemVxWorks
+http://dbpedia.org/resource/VxWorksMemory management
+http://dbpedia.org/resource/Memory_managementDesign Issues
+http://dbpedia.org/resource/Design_IssuesQNX
+http://dbpedia.org/resource/QNXDataflow programming
+http://dbpedia.org/resource/Dataflow_programming
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COMP474
+Coen River
+http://dbpedia.org/resource/Coen_RiverBlackboard
+http://dbpedia.org/resource/BlackboardExpert system
+http://dbpedia.org/resource/Expert_systemArtificial intelligence
+http://dbpedia.org/resource/Artificial_intelligenceComputer simulation
+http://dbpedia.org/resource/Computer_simulationCollege of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificKnowledge acquisition
+http://dbpedia.org/resource/Knowledge_acquisitionConflict resolution
+http://dbpedia.org/resource/Conflict_resolution
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > 
+

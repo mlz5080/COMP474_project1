@@ -42,3 +42,84 @@ Please enter the ID of a given Student
 2002 http://example.org/ART448 C
 2016 http://example.org/ARTT470 D
 
+
+NEW QUERY:
+Please enter the ID of a given Student
+ > 4
+2013 http://example.org/GEOG290 C
+2020 http://example.org/PHYS458 B
+1994 http://example.org/ARTH400 C
+2019 http://example.org/FTRA499 B
+1994 http://example.org/FMAN301 D
+1993 http://example.org/ECON662 C
+2014 http://example.org/MPER490 D
+2011 http://example.org/PHIL488 A
+2012 http://example.org/JAZZ305 C
+
+
+NEW QUERY:
+Please enter the ID of a given Student
+ > 45
+1999 http://example.org/ARTE434 B
+2019 http://example.org/CEPS1012E D
+1990 http://example.org/PHIL342 C
+2014 http://example.org/ENCS5721 A
+2003 http://example.org/ELEC7441 D
+1995 http://example.org/IMCA210 D
+2016 http://example.org/GEOG490 B
+2003 http://example.org/GEOG485 A
+2014 http://example.org/AERO483 A
+2005 http://example.org/COMP478 B
+2011 http://example.org/COMS205 D
+2020 http://example.org/HIST850 C
+1991 http://example.org/HIST630 B
+2002 http://example.org/MASZ217 B
+2019 http://example.org/INTE409 D
+1991 http://example.org/CEWPMOD5 D
+1990 http://example.org/RELI604 D
+1995 http://example.org/SPAN441 C
+1995 http://example.org/JOUR209 C
+2021 http://example.org/AHSC425 D
+2003 http://example.org/ARTH636 B
+2016 http://example.org/MECH6311 C
+2014 http://example.org/BIOL443 A
+2004 http://example.org/COMP6651 A
+1993 http://example.org/COMS324 A
+
+
+NEW QUERY:
+Please enter the ID of a given Student
+ > 92
+2021 http://example.org/GPDI515 C
+1997 http://example.org/MANA451 A
+2013 http://example.org/IRST210 A
+2012 http://example.org/ARTH650 D
+2017 http://example.org/POLI208 D
+1991 http://example.org/INDU6391 D
+1992 http://example.org/ENGL606 C
+1996 http://example.org/ETEC831 D
+2020 http://example.org/GEOG300 C
+1999 http://example.org/BIOL225 C
+1995 http://example.org/ENGL670 D
+2021 http://example.org/GPWL970 B
+2019 http://example.org/CDNS320 B
+1999 http://example.org/CHEM241 A
+2018 http://example.org/RELI329 C
+1998 http://example.org/MAST335 D
+1998 http://example.org/HIST366 C
+1991 http://example.org/DART652 C
+2010 http://example.org/THEO492 B
+2021 http://example.org/RELI690 C
+1999 http://example.org/SOEN344 D
+2012 http://example.org/ECON252 A
+2013 http://example.org/COEN6341 C
+2014 http://example.org/ACTU256 B
+2021 http://example.org/PHOT480 B
+2017 http://example.org/GPLL72 C
+2013 http://example.org/THEA415 A
+1992 http://example.org/MSCA671 B
+2004 http://example.org/FTRA638 B
+2012 http://example.org/WSDB290 B
+2018 http://example.org/BIOL227 D
+2007 http://example.org/CELD1200 D
+

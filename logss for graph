@@ -1,0 +1,20 @@
+KITCHEN
+2020-03-15 08:22:51.053 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_7_presence changed from OFF to ON
+2020-03-15 08:22:51.057 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_7_last_updated changed from 2020-03-16T08:36:01.000-0400 to 2020-03-16T08:42:11.000-0400
+2020-03-15 08:22:55.999 [vent.ItemStateChangedEvent] - hue_0100_ecb5fa1b9120_1_brightness changed from 0 to 100
+
+OFFICE
+2020-03-15 08:23:50.752 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_2_presence changed from OFF to ON
+2020-03-15 08:23:50.753 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_2_last_updated changed from 2020-03-16T08:36:09.000-0400 to 2020-03-16T08:43:10.000-0400
+
+LIVING ROOM
+2020-03-15 08:38:01.738 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_29_presence changed from OFF to ON
+2020-03-15 08:38:01.744 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_29_last_updated changed from 2020-03-16T08:43:54.000-0400 to 2020-03-16T08:57:22.000-0400
+2020-03-15 08:38:07.214 [vent.ItemStateChangedEvent] - hue_0100_ecb5fa1b9120_3_brightness changed from 0 to 100
+
+
+BEDROOM
+2020-03-15 08:38:50.535 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_18_presence changed from OFF to ON
+2020-03-15 08:38:50.537 [vent.ItemStateChangedEvent] - hue_0107_ecb5fa1b9120_18_last_updated changed from 2020-03-16T08:36:15.000-0400 to 2020-03-16T08:58:10.000-0400
+2020-03-15 08:38:57.291 [vent.ItemStateChangedEvent] - hue_0100_ecb5fa1b9120_4_brightness changed from 0 to 100
+
