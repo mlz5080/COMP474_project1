@@ -1,0 +1,96 @@
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COEN320
+College of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificFlag semaphore
+http://dbpedia.org/resource/Flag_semaphoreInter-process communication
+http://dbpedia.org/resource/Inter-process_communicationCoen River
+http://dbpedia.org/resource/Coen_RiverDataflow programming
+http://dbpedia.org/resource/Dataflow_programmingVxWorks
+http://dbpedia.org/resource/VxWorksException handling
+http://dbpedia.org/resource/Exception_handlingTime
+http://dbpedia.org/resource/TimeMemory management
+http://dbpedia.org/resource/Memory_managementUniprocessor system
+http://dbpedia.org/resource/Uniprocessor_systemAlgorithm
+http://dbpedia.org/resource/AlgorithmDesign Issues
+http://dbpedia.org/resource/Design_IssuesFault tolerance
+http://dbpedia.org/resource/Fault_toleranceSynchronization
+http://dbpedia.org/resource/SynchronizationSpecification language
+http://dbpedia.org/resource/Specification_languageQNX
+http://dbpedia.org/resource/QNXPetri net
+http://dbpedia.org/resource/Petri_netReal-time operating system
+http://dbpedia.org/resource/Real-time_operating_systemConcurrent computing
+http://dbpedia.org/resource/Concurrent_computingPOSIX Threads
+http://dbpedia.org/resource/POSIX_ThreadsInterrupt
+http://dbpedia.org/resource/Interrupt
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COEN320
+College of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificCoen River
+http://dbpedia.org/resource/Coen_RiverQNX
+http://dbpedia.org/resource/QNXReal-time operating system
+http://dbpedia.org/resource/Real-time_operating_systemAlgorithm
+http://dbpedia.org/resource/AlgorithmFlag semaphore
+http://dbpedia.org/resource/Flag_semaphoreTime
+http://dbpedia.org/resource/TimeException handling
+http://dbpedia.org/resource/Exception_handlingMemory management
+http://dbpedia.org/resource/Memory_managementVxWorks
+http://dbpedia.org/resource/VxWorksPetri net
+http://dbpedia.org/resource/Petri_netDesign Issues
+http://dbpedia.org/resource/Design_IssuesInterrupt
+http://dbpedia.org/resource/InterruptUniprocessor system
+http://dbpedia.org/resource/Uniprocessor_systemFault tolerance
+http://dbpedia.org/resource/Fault_tolerancePOSIX Threads
+http://dbpedia.org/resource/POSIX_ThreadsSynchronization
+http://dbpedia.org/resource/SynchronizationInter-process communication
+http://dbpedia.org/resource/Inter-process_communicationConcurrent computing
+http://dbpedia.org/resource/Concurrent_computingSpecification language
+http://dbpedia.org/resource/Specification_languageDataflow programming
+http://dbpedia.org/resource/Dataflow_programming
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COEN320
+Exception handling
+http://dbpedia.org/resource/Exception_handlingPetri net
+http://dbpedia.org/resource/Petri_netInter-process communication
+http://dbpedia.org/resource/Inter-process_communicationUniprocessor system
+http://dbpedia.org/resource/Uniprocessor_systemFlag semaphore
+http://dbpedia.org/resource/Flag_semaphoreAlgorithm
+http://dbpedia.org/resource/AlgorithmPOSIX Threads
+http://dbpedia.org/resource/POSIX_ThreadsSpecification language
+http://dbpedia.org/resource/Specification_languageTime
+http://dbpedia.org/resource/TimeCoen River
+http://dbpedia.org/resource/Coen_RiverSynchronization
+http://dbpedia.org/resource/SynchronizationInterrupt
+http://dbpedia.org/resource/InterruptCollege of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificFault tolerance
+http://dbpedia.org/resource/Fault_toleranceConcurrent computing
+http://dbpedia.org/resource/Concurrent_computingReal-time operating system
+http://dbpedia.org/resource/Real-time_operating_systemVxWorks
+http://dbpedia.org/resource/VxWorksMemory management
+http://dbpedia.org/resource/Memory_managementDesign Issues
+http://dbpedia.org/resource/Design_IssuesQNX
+http://dbpedia.org/resource/QNXDataflow programming
+http://dbpedia.org/resource/Dataflow_programming
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > COMP474
+Coen River
+http://dbpedia.org/resource/Coen_RiverBlackboard
+http://dbpedia.org/resource/BlackboardExpert system
+http://dbpedia.org/resource/Expert_systemArtificial intelligence
+http://dbpedia.org/resource/Artificial_intelligenceComputer simulation
+http://dbpedia.org/resource/Computer_simulationCollege of Osteopathic Medicine of the Pacific
+http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_PacificKnowledge acquisition
+http://dbpedia.org/resource/Knowledge_acquisitionConflict resolution
+http://dbpedia.org/resource/Conflict_resolution
+
+NEW QUERY:
+Please enter the Subject Catalog (i.e. ACCO435) of a Course
+ > 
+

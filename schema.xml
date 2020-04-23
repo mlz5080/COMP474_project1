@@ -1,0 +1,61 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:focu="http://focu.io/schema#"
+    xmlns:dbo="http://www.dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://focu.io/schema#Student">
+    <rdfs:comment xml:lang="en">A person enrolled in one or more courses at a academic institution or other place of academic learning</rdfs:comment>
+    <rdfs:label xml:lang="en">Student</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#subject_catalog">
+    <rdfs:comment xml:lang="en">An abbreviated course displicine and course number which combined uniquely identifies any university course within that academic institution.</rdfs:comment>
+    <rdfs:label xml:lang="en">Unique identifier for a course</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/Record"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#hasRecord">
+    <rdfs:comment xml:lang="en">A property describing the relationship between a single student and a single record</rdfs:comment>
+    <rdfs:label xml:lang="en">Has record</rdfs:label>
+    <rdfs:range rdf:resource="http://example.org/Record"/>
+    <rdfs:domain rdf:resource="http://example.org/Student"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#grade">
+    <rdfs:comment xml:lang="en">A single letter measuring the performance in the course of the associated Record.</rdfs:comment>
+    <rdfs:label xml:lang="en">Letter grade</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/Record"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#catalog">
+    <rdfs:comment xml:lang="en">An integer number which uniquely identifies a course within a particular discipline.</rdfs:comment>
+    <rdfs:label xml:lang="en">Course number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.dbpedia.org/resource/Course_(education)"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#semester">
+    <rdfs:comment xml:lang="en">The year in which the course associated to the Record took place.</rdfs:comment>
+    <rdfs:label xml:lang="en">Semester</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://example.org/Record"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#Record">
+    <rdfs:comment xml:lang="en">Information about single student's participation in a single course in a particular semester</rdfs:comment>
+    <rdfs:label xml:lang="en">Record</rdfs:label>
+    <rdf:type rdf:resource="http://www.dbpedia.org/resource/document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://focu.io/schema#subject">
+    <rdfs:comment xml:lang="en">An abbreviation for the discipline or department under which an academic course falls</rdfs:comment>
+    <rdfs:label xml:lang="en">Discipline of course</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.dbpedia.org/resource/Course_(education)"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

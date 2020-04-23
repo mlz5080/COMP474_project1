@@ -1,0 +1,15 @@
+elif query_type is "6":
+	student_id = input("Please enter the ID of a given student"
+						"\n > ")
+	target = URIRef("http://example.org/" + student_id)
+	q = prepareQuery(
+			"""SELECT ?topic WHERE {
+				?s_id focu:hasRecord ?rec .
+				?rec focu:grade ?g .
+				FILTER(?g != "F")
+				?rec focu:subject_catalog ?sc .
+				?sc foaf:topic ?topic
+			}""",
+			initNs = {
+				"s_id": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
+			}

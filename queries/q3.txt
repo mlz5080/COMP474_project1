@@ -1,0 +1,12 @@
+elif query_type is "3":
+	course_sub_cata = input("Please enter the Subject Catalog (i.e. ACCO435) of a Course"
+							"\n > ")
+	target = URIRef("http://example.org/" + course_sub_cata)
+	q_topic = prepareQuery(
+		"""SELECT ?topic WHERE {
+			?c_sub_cata foaf:topic ?topic
+		}""",
+		initNs = {
+			"c_sub_cata": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"			
+		}
+	)
