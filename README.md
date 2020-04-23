@@ -2,7 +2,7 @@ ___Concordia University, Winter 2020, COMP474_project___
 ___________________________________________
 # [--- PHASE I ---]
 ![](img/comp474_phase_i.png)
-
+___________________________________________
 ### DELIVERABLES
 _The following discribes which file belong to which deliverable._
 #### RDF Schema;
@@ -29,7 +29,7 @@ query.py - Allows a user to query Knowledge Graph with questions from the Assign
 ___________________________________________
 # [--- PHASE II ---]
 ![](img/comp474_phase_ii.png)
-
+___________________________________________
 ### DELIVERABLES
 _The following discribes which file belong to which deliverable._
 #### Chatbot;
