@@ -1,3 +1,5 @@
 rdflib==4.2.2
 requests==2.21.0
 requests-futures==1.0.0
+spacy==2.2.4
+en-core-web-md==2.2.5
