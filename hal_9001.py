@@ -120,6 +120,7 @@ def query_knowledge_graph(question_type, question_details):
 	# QUESTION 3
 	elif question_type is "question_3":
 		# question_details holds a Topic; return courses covering said Topic
+		enter=False
 		target = URIRef("http://dbpedia.org/resource/" + question_details.replace(" ","_"))
 		q_topic = prepareQuery(
 				"""SELECT ?c_sub_cata WHERE {
