@@ -142,6 +142,7 @@ def query_knowledge_graph(question_type, question_details):
 				"tar": target, "dbp": "http://dbpedia.org/resource/" , "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"
 			}
 		)
+		print("Hal_9001 > The following Students are familiar with " + question_details.strip("?") + ":")
 		for row in g.query(q, initBindings={"tar": target}):
 			pretty_row = row[0].replace("http://example.org/", "")
 			print(" 	", pretty_row)
