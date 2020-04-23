@@ -5,6 +5,7 @@ from rdflib.namespace import FOAF, RDF
 from rdflib.plugins.sparql import prepareQuery
 
 
+######################################### VARIABLE DECLARATION ##################################################
 g = Graph()
 result = g.parse("knowledge_base.txt", format="turtle")
 nlp = spacy.load("en_core_web_md")  # make sure to use larger model!
@@ -13,10 +14,15 @@ question_2 = nlp("Which courses did take")
 question_3 = nlp("Which courses cover")
 question_4 = nlp("Who is familiar with")
 match=False
+###################################### END OF VARIABLE DECLARATION ###############################################
 
+
+############################################### FUNCTIONS ########################################################
 def determine_question(input_text):
 	"""
 	Uses NLP to determine with 75% certainty which question is being asked
+	:param input_text: string
+	:return: string, string
 	"""	
 	text_doc = nlp(input_text)
 	for token in text_doc:
@@ -68,6 +74,9 @@ def determine_question(input_text):
 def query_knowledge_graph(question_type, question_details):
 	"""
 	Query knowledge graph by create an appropriate SPARQL-query format depending on the question_type
+	:param question_type: string
+	:param question_details: string
+	:return:
 	"""
 
 	# QUESTION 1
@@ -112,7 +121,6 @@ def query_knowledge_graph(question_type, question_details):
 	# QUESTION 3
 	elif question_type is "question_3":
 		# question_details holds a Topic; return courses covering said Topic
-		enter = False
 		target = URIRef("http://dbpedia.org/resource/" + question_details.replace(" ","_"))
 		q_topic = prepareQuery(
 				"""SELECT ?c_sub_cata WHERE {
@@ -187,7 +195,10 @@ def query_knowledge_graph(question_type, question_details):
 		for row in g.query(q, initBindings={"tar": target}):
 			pretty_row = row[0].replace("http://example.org/", "")
 			print(" 	", pretty_row)
+############################################ END OF FUNCTIONS #####################################################
 
+
+############################################ CHATBOT MAIN #########################################################
 if __name__ == '__main__':
 	print("Hal_9001 > Greetings human, my name is Hal 9001. How may I assist you?")
 	while True:
@@ -205,17 +216,5 @@ if __name__ == '__main__':
 				else:
 					match=False	
 		except KeyboardInterrupt:
-			print("Hal_9001 > Your question does not make sense... Try again, human.")
 			break
-
-
-
-
-
-
-
-
-
-
-
-
+######################################### END OF CHATBOT MAIN ######################################################
