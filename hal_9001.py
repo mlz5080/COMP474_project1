@@ -42,9 +42,11 @@ def determine_question(input_text):
 					return("question_2", student.group(1))
 		elif token.lower_ in ["cover"]:
 			question_similarity = text_doc.similarity(question_3)
+			print(question_similarity)
 			if question_similarity > 0.80:	
 				# print("[", text_doc.text, "|", question_3.text, "]", question_similarity)
 				topic = re.match(r'.* cover (.*)', input_text)
+				#print(topic)
 				if topic==None:
 					print("Hal_9001 > Your question does not make sense... Try again, human.")
 					match=True
@@ -111,18 +113,51 @@ def query_knowledge_graph(question_type, question_details):
 	elif question_type is "question_3":
 		# question_details holds a Topic; return courses covering said Topic
 		# TODO!
-		target = URIRef("http://dbpedia.org/resource/" + question_details)
-		q_topic = prepareQuery(
-				"""SELECT ?c_sub_cata WHERE {
-					?c_sub_cata foaf:topic ?topic
-				}""",
-				initNs = {
-					"topic": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"			
-				}
-			)
-		label_subject_list=[]
-		for row in g.query(q_topic, initBindings={"topic": target}):
-			print(row)
+		#Coen_River
+		#Real-time operating system 
+		#
+		#Inter-process communication
+		#Real-time,operating,system
+		tokens = nlp(question_details)
+		for i in tokens:
+			print(i,i.pos_ in "ADP",i.text_ in "of")
+		potential_target_list=[]
+		target_split = question_details.split(" ")
+		found=False
+		for indexI,i in enumerate(target_split):
+			target_string = ""
+			for indexJ,j in enumerate(target_split):
+				if indexI>=indexJ:
+					target_string+=target_split[indexJ].capitalize()
+					if indexJ<len(target_split)-1:
+						target_string+="_"
+				else:
+					target_string+=target_split[indexJ].lower()
+					if indexJ<len(target_split)-1:
+						target_string+="_"
+			potential_target_list.append(target_string)
+			print(target_string)
+			#print(target_string)
+			#case1
+
+		for i in potential_target_list:
+			target = URIRef("http://dbpedia.org/resource/" + i)
+			q_topic = prepareQuery(
+					"""SELECT ?c_sub_cata WHERE {
+						?c_sub_cata foaf:topic ?topic
+					}""",
+					initNs = {
+						"topic": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"			
+					}
+				)
+			enter=False
+			if len(g.query(q_topic, initBindings={"topic": target}))>0:
+				enter=True
+				print("Hal_9001 >  The following courses has",question_details+":")
+			for row in g.query(q_topic, initBindings={"topic": target}):
+				print(" 	",row[0].replace("http://example.org/",""))
+			if enter:
+				break
 
 	# QUESTION 4
 	elif question_type is "question_4":
@@ -146,11 +181,14 @@ def query_knowledge_graph(question_type, question_details):
 			pretty_row = row[0].replace("http://example.org/", "")
 			print(" 	", pretty_row)
 
-
 if __name__ == '__main__':
 	while True:
 		try:
-			question_type, question_details = determine_question(input("User > "))
+			user_input = input("User > ")
+			if len(user_input.split(" "))<2 and "exit" in user_input.lower():
+				print("BYE")
+				break
+			question_type, question_details = determine_question(user_input)
 			if question_type is not "null" and question_details is not "null":
 				query_knowledge_graph(question_type, question_details)
 			else:
