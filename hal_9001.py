@@ -148,6 +148,7 @@ def query_knowledge_graph(question_type, question_details):
 
 
 if __name__ == '__main__':
+	print("Hal_9001 > Greetings human, my name is Hal 9001. How may I assist you?")
 	while True:
 		try:
 			question_type, question_details = determine_question(input("User > "))
