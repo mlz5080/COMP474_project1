@@ -16,13 +16,13 @@ match=False
 
 def determine_question(input_text):
 	"""
-	Uses NLP to determine with 80% certainty which question is being asked
+	Uses NLP to determine with 75% certainty which question is being asked
 	"""	
 	text_doc = nlp(input_text)
 	for token in text_doc:
 		if token.lower_ in ["about"]:
 			question_similarity = text_doc.similarity(question_1)
-			if question_similarity > 0.80:	
+			if question_similarity > 0.75:	
 				# print("[", text_doc.text, "|", question_1.text, "]", question_similarity)
 				course = re.match(r'.* is (.*) about', input_text)
 				if course==None:
@@ -32,7 +32,7 @@ def determine_question(input_text):
 					return("question_1", course.group(1))
 		elif token.lower_ in ["take"]:
 			question_similarity = text_doc.similarity(question_2)
-			if question_similarity > 0.80:	
+			if question_similarity > 0.75:	
 				# print("[", text_doc.text, "|", question_2.text, "]", question_similarity)
 				student = re.match(r'.* did (.*) take', input_text)
 				if student==None:
@@ -43,7 +43,7 @@ def determine_question(input_text):
 		elif token.lower_ in ["cover"]:
 			question_similarity = text_doc.similarity(question_3)
 			print(question_similarity)
-			if question_similarity > 0.80:	
+			if question_similarity > 0.75:	
 				# print("[", text_doc.text, "|", question_3.text, "]", question_similarity)
 				topic = re.match(r'.* cover (.*)', input_text)
 				#print(topic)
@@ -54,7 +54,7 @@ def determine_question(input_text):
 					return("question_3", topic.group(1))
 		elif token.lower_ in ["familiar"]:
 			question_similarity = text_doc.similarity(question_4)
-			if question_similarity > 0.80:	
+			if question_similarity > 0.75:	
 				# print("[", text_doc.text, "|", question_4.text, "]", question_similarity)
 				familiar_topic = re.match(r'.* with (.*)', input_text)
 				if familiar_topic==None:
@@ -112,18 +112,27 @@ def query_knowledge_graph(question_type, question_details):
 	# QUESTION 3
 	elif question_type is "question_3":
 		# question_details holds a Topic; return courses covering said Topic
-		# TODO!
-		#Coen_River
-		#Real-time operating system 
-		#
-		#Inter-process communication
-		#Real-time,operating,system
-		tokens = nlp(question_details)
-		for i in tokens:
-			print(i,i.pos_ in "ADP",i.text_ in "of")
+		enter = False
+		target = URIRef("http://dbpedia.org/resource/" + question_details.replace(" ","_"))
+		q_topic = prepareQuery(
+				"""SELECT ?c_sub_cata WHERE {
+					?c_sub_cata foaf:topic ?topic
+				}""",
+				initNs = {
+						"topic": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"			
+				}
+			)
+		if len(g.query(q_topic, initBindings={"topic": target}))>0:
+			enter=True
+			print("Hal_9001 >  The following courses has",question_details+":")
+		for row in g.query(q_topic, initBindings={"topic": target}):
+			print(" 	",row[0].replace("http://example.org/",""))
+
+		if enter:
+			return
+
 		potential_target_list=[]
 		target_split = question_details.split(" ")
-		found=False
 		for indexI,i in enumerate(target_split):
 			target_string = ""
 			for indexJ,j in enumerate(target_split):
@@ -136,9 +145,6 @@ def query_knowledge_graph(question_type, question_details):
 					if indexJ<len(target_split)-1:
 						target_string+="_"
 			potential_target_list.append(target_string)
-			print(target_string)
-			#print(target_string)
-			#case1
 
 		for i in potential_target_list:
 			target = URIRef("http://dbpedia.org/resource/" + i)
