@@ -12,7 +12,7 @@ question_1 = nlp("What is about?")
 question_2 = nlp("Which courses did take")
 question_3 = nlp("Which courses cover")
 question_4 = nlp("Who is familiar with")
-
+match=False
 
 def determine_question(input_text):
 	"""
@@ -25,25 +25,41 @@ def determine_question(input_text):
 			if question_similarity > 0.80:	
 				# print("[", text_doc.text, "|", question_1.text, "]", question_similarity)
 				course = re.match(r'.* is (.*) about', input_text)
-				return("question_1", course.group(1))
+				if course==None:
+					print("Hal_9001 > Your question does not make sense... Try again, human.")
+					match=True
+				else:
+					return("question_1", course.group(1))
 		elif token.lower_ in ["take"]:
 			question_similarity = text_doc.similarity(question_2)
 			if question_similarity > 0.80:	
 				# print("[", text_doc.text, "|", question_2.text, "]", question_similarity)
 				student = re.match(r'.* did (.*) take', input_text)
-				return("question_2", student.group(1))
+				if student==None:
+					print("Hal_9001 > Your question does not make sense... Try again, human.")
+					match=True
+				else:
+					return("question_2", student.group(1))
 		elif token.lower_ in ["cover"]:
 			question_similarity = text_doc.similarity(question_3)
 			if question_similarity > 0.80:	
 				# print("[", text_doc.text, "|", question_3.text, "]", question_similarity)
 				topic = re.match(r'.* cover (.*)', input_text)
-				return("question_3", topic.group(1))
+				if topic==None:
+					print("Hal_9001 > Your question does not make sense... Try again, human.")
+					match=True
+				else:
+					return("question_3", topic.group(1))
 		elif token.lower_ in ["familiar"]:
 			question_similarity = text_doc.similarity(question_4)
 			if question_similarity > 0.80:	
 				# print("[", text_doc.text, "|", question_4.text, "]", question_similarity)
 				familiar_topic = re.match(r'.* with (.*)', input_text)
-				return("question_4", familiar_topic.group(1))	
+				if familiar_topic==None:
+					print("Hal_9001 > Your question does not make sense... Try again, human.")
+					match=True
+				else:
+					return("question_4", familiar_topic.group(1))	
 	return("null", "null")
 
 
@@ -95,7 +111,18 @@ def query_knowledge_graph(question_type, question_details):
 	elif question_type is "question_3":
 		# question_details holds a Topic; return courses covering said Topic
 		# TODO!
-		pass
+		target = URIRef("http://dbpedia.org/resource/" + question_details)
+		q_topic = prepareQuery(
+				"""SELECT ?c_sub_cata WHERE {
+					?c_sub_cata foaf:topic ?topic
+				}""",
+				initNs = {
+					"topic": target, "foaf": FOAF, "rdf":RDF, "focu":"http://focu.io/schema#"			
+				}
+			)
+		label_subject_list=[]
+		for row in g.query(q_topic, initBindings={"topic": target}):
+			print(row)
 
 	# QUESTION 4
 	elif question_type is "question_4":
@@ -124,10 +151,13 @@ if __name__ == '__main__':
 	while True:
 		try:
 			question_type, question_details = determine_question(input("User > "))
-			if question_type is not "null":
+			if question_type is not "null" and question_details is not "null":
 				query_knowledge_graph(question_type, question_details)
 			else:
-				print("Hal_9001 > Your question has no answer... Try again, human.")	
+				if not match:
+					print("Hal_9001 > Your question has no answer... Try again, human.")
+				else:
+					match=False	
 		except KeyboardInterrupt:
 			print("Hal_9001 > Your question does not make sense... Try again, human.")
 			break
