@@ -48,7 +48,6 @@ def determine_question(input_text):
 					return("question_2", student.group(1))
 		elif token.lower_ in ["cover"]:
 			question_similarity = text_doc.similarity(question_3)
-			print(question_similarity)
 			if question_similarity > 0.75:	
 				# print("[", text_doc.text, "|", question_3.text, "]", question_similarity)
 				topic = re.match(r'.* cover (.*)', input_text)
