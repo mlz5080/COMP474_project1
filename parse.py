@@ -8,7 +8,7 @@ from rdflib.plugins.sparql import prepareQuery
 #Knowledge Graph variable and namespace declaration
 dbp = Namespace("http://dbpedia.org/resource/")
 g = Graph()
-result = g.parse("schema.xml", format="xml")
+result = g.parse("schema.ttl", format="turtle")
 nsm = NamespaceManager(g)
 nsm.bind('dbr', 'http://dbpedia.org/resource/')
 nsm.bind('ex', 'http://example.org/')
@@ -16,7 +16,7 @@ nsm.bind('focu', 'http://focu.io/schema#')
 course_counter = 0
 list_of_indexes_of_resourceless_courses = []
 list_of_valid_graph_entries = []
-concordia_university = URIRef('http://dbpedia.org/resource/Concordia_University')
+concordia_university = URIRef('http://example.org/Concordia')
 #End of variable and namespace declaration
 
 def create_students():
