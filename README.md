@@ -51,7 +51,7 @@ Once executing the command below in terminal which is in the [path-to-project]/C
 
 Hal 9001 is capable of answering questions which resemble: 
 ___Note: the Chatbot is case sensistive___
-1. What is the < Course > about? (i.e. < Course > = COMP474)
+1. What is < Course > about? (i.e. < Course > = COMP474)
 2. Which courses did < Student_ID > take? (i.e. < Student_ID > = 20)
 3. Which courses cover < Topic >? (i.e. < Topic > = Artificial intelligence)
 4. Who is familiar with < Topic >? (i.e. < Topic > = Montreal)
