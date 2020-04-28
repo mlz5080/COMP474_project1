@@ -12,7 +12,7 @@ schema.ttl
 database.txt
 ___________________________________________
 ### INSTALLATION 
-_Instructions displayed below are from a Linux-Debian machine using a Bash terminal. It is important to note that this repository has the knowledge_base which is created from exeucting this installation step; this section is for documentation purposes._
+_Instructions displayed below are from a Linux-Debian machine using a Bash terminal. It is important to note that this repository has the knowledge_base which is created from executing the installation step; this section is for documentation purposes._
 #### Database Construction;
 database_builder.py - Please use the following command to install python's dependencies.
 >pip3 install -r [path-to-project]/COMP474_project1/requirements.txt
